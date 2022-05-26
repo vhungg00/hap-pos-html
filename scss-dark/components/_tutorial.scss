@@ -1,0 +1,126 @@
+.tutorial {
+  &__box {
+    background: url(../../images/white-concrete-wall\ 2.png);
+    background-size: cover;
+    object-fit: cover;
+    padding-bottom: 30px;
+    &-main {
+      width: 100%;
+      display: flex;
+      border-radius: 8px;
+      overflow: hidden;
+      margin-bottom: 24px;
+      background-color: $bgPrimary;
+    }
+    &-img {
+      display: block;
+      object-fit: cover;
+      width: 34%;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+    &-body {
+      background-color: $bgPrimary;
+      padding: 12px 24px 4px 24px;
+      position: relative;
+      width: 66%;
+      display: flex;
+      flex-direction: column;
+    }
+    &-heading {
+      a {
+        transition: all 0.2s;
+        color: $contentPrimary;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 26px;
+        margin-bottom: 4px;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        &:hover {
+          color: $Brainning;
+        }
+      }
+    }
+    &-time {
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 16px;
+      margin-bottom: 4px;
+      color: $contentSecondary;
+    }
+    &-desc {
+      margin-bottom: 4px;
+      font-size: 14px;
+      line-height: 20px;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      flex: 1;
+      color: $contentSecondary;
+    }
+    &-link {
+      display: block;
+      text-decoration: none;
+      color: $Brainning;
+      font-weight: 500;
+      text-decoration: none;
+      padding-bottom: 4px;
+    }
+  }
+  &__top {
+    padding-top: 52px;
+    padding-bottom: 36px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &-box {
+      display: flex;
+      color: $contentPrimary;
+      align-items: center;
+      span {
+        font-size: 24px;
+        font-weight: 700;
+        display: block;
+        margin-left: 12px;
+        line-height: 32px;
+      }
+    }
+    &-showmore {
+      a {
+        transition: all 0.2s;
+        text-decoration: none;
+        color: $AlwaysContentPrimary;
+        text-decoration: none;
+        &:hover {
+          color: $Brainning;
+        }
+      }
+    }
+  }
+  &__notifi {
+    &-item {
+      display: flex;
+      align-items: center;
+      span {
+        margin-left: 4px;
+      }
+    }
+    padding-top: 8px;
+    width: 100%;
+    // height: 36px;
+    flex-wrap: wrap;
+    border-top: 1px solid $lineSecondary;
+    display: flex;
+    justify-content: space-between;
+    color: $contentSecondary;
+  }
+}

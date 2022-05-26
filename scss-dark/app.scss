@@ -1,0 +1,28 @@
+@import "global";
+@import "color";
+@import "animation";
+@import "variables";
+// components
+
+@import "./components/header";
+@import "./components/bannerSlide";
+@import "./components/footer";
+@import "./components/breadcrumb";
+@import "./components/pagination";
+@import "./components/btnScrollToTop";
+@import "./components/banner";
+@import "./components/tutorial";
+@import "./components/feature";
+@import "./components/pagehero";
+@import "./components/subscribe";
+@import "./components/reviews";
+
+@import "./components/question";
+@import "./components/item";
+@import "./components/comment";
+@import "./components/form";
+
+// pages
+@import "./pages/home";
+@import "./pages/pricingPage";
+@import "./pages/productDetailPage";

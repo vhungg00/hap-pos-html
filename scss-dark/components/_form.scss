@@ -1,0 +1,245 @@
+.checkbox-custom-1 {
+  position: relative;
+  background-color: transparent;
+  display: block;
+
+  label.containerLabel {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    position: relative;
+    padding-left: 0px;
+    cursor: pointer;
+    margin-bottom: 0;
+    user-select: none;
+    background-color: transparent;
+  }
+  .containerLabel .text {
+    padding-left: 30px;
+  }
+
+  /* Hide the browser's default checkbox */
+  .containerLabel input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 22px;
+    width: 22px;
+    border-radius: 8px;
+    background-color: #fff;
+    /* Light / Funtion / linkPrimary */
+    border: 2px solid $alwaysLine;
+    border-radius: 8px;
+    display: flex;
+  }
+
+  /* On mouse-over, add a grey background color */
+  .containerLabel:hover input ~ .checkmark {
+    // background-color: color-theming.$bgAccentSecondary;
+    // background-color: #fff;
+  }
+
+  /* When the checkbox is checked, add a blue background */
+  .containerLabel input:checked ~ .checkmark {
+    background-color: $linkPrimary;
+    border-radius: 8px;
+    border: unset;
+  }
+
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+
+  /* Show the checkmark when checked */
+  .containerLabel input:checked ~ .checkmark:after {
+    display: block;
+  }
+
+  /* Style the checkmark/indicator */
+  .containerLabel .checkmark:after {
+    left: 7.5px;
+    top: 5px;
+    width: 6px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+}
+.ReviewForm {
+  padding: 16px 0 40px 0;
+  &__label {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    /* identical to box height, or 143% */
+
+    /* Light/content/Primary */
+
+    color: $contentPrimary;
+  }
+  &__rate {
+    &-text {
+      margin-top: 14px;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 20px;
+      /* identical to box height, or 143% */
+
+      /* Light/content/Secondary */
+
+      color: $contentSecondary;
+    }
+    &-list {
+      margin-top: 14px;
+      .icon {
+        &:hover svg path {
+          fill: #ffce39;
+        }
+      }
+    }
+  }
+  &__form {
+    margin-top: 14px;
+    &-textarea {
+      textarea {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        /* identical to box height, or 143% */
+
+        /* Light/content/Secondary */
+
+        color: $contentSecondary;
+      }
+    }
+
+    &-input {
+      margin-top: 14px;
+      input {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        /* identical to box height, or 143% */
+
+        /* Light/content/Secondary */
+
+        color: $contentSecondary;
+        padding: 12px 14px;
+        height: 48px;
+      }
+    }
+    &-checkbox {
+      margin-top: 14px;
+      .checkbox-custom-1 .containerLabel .text {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        /* identical to box height, or 143% */
+
+        /* Light/content/Secondary */
+
+        color: $contentSecondary;
+      }
+    }
+
+    &-btn {
+      margin-top: 14px;
+      button {
+        background: $Brainning;
+        border-radius: 4px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        /* identical to box height, or 150% */
+
+        text-align: center;
+
+        /* Light / Funtion / alwaysLightPrimary */
+
+        color: $alwaysLightPrimary;
+      }
+      &:hover {
+        opacity: 0.8;
+        button {
+          color: $alwaysLightPrimary;
+        }
+      }
+    }
+  }
+}
+
+.quantity-custom {
+  display: block;
+  // background-color: aquamarine;
+
+  .groupOne {
+    border-radius: 8px;
+    width: 126px;
+    height: 44px;
+    display: flex;
+    border: 1px solid $contentTertiary;
+    align-items: center;
+    justify-content: space-between;
+    .btn-plus {
+      border: none;
+      background-color: transparent;
+      outline: none;
+      // padding: 12px 20px 12px 0;
+      padding-right: 20px;
+      &:hover {
+        opacity: 0.8;
+      }
+      svg path {
+        fill: $contentSecondary;
+      }
+    }
+    .value {
+      color: $contentPrimary;
+
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+      display: flex;
+      align-items: center;
+      letter-spacing: 0.5px;
+      height: 100%;
+    }
+    .btn-minus {
+      border: none;
+      background-color: transparent;
+      outline: none;
+      // padding: 12px 0 12px 20px;
+      padding-left: 20px;
+      &:hover {
+        opacity: 0.8;
+      }
+      svg path {
+        fill: $contentSecondary;
+      }
+    }
+  }
+}

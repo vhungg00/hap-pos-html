@@ -8,19 +8,82 @@
   z-index: 100;
   &__box {
     &-global {
-      background-color: $colorBlack;
+      background-color: $bgPrimary;
       width: 100%;
       display: flex;
       justify-content: center;
+      box-shadow: 0 2px 4px $shadow;
       .global {
-        &__box {
+        &__nav {
           min-height: 56px;
           width: 100%;
           display: flex;
           align-items: center;
-          flex-wrap: wrap;
-          
+          justify-content: space-between;
+          .nav {
+            &__left {
+              list-style: none;
+              display: flex;
+              align-items: center;
 
+              margin-bottom: 0;
+
+              .left__item:hover {
+                background-color: #3333;
+              }
+              
+              .left__item {
+                
+                a {
+                  i {
+                    margin-right: 8px ;
+                  }
+                  display: flex;
+                  align-items: center;
+                  line-height: 56px;
+                  text-decoration: none;
+                  padding: 0 16px;
+                  color: $contentInversePrimary;
+
+                  span {
+                    display: block;
+                    font-weight: 500;
+                  }
+                }
+              }
+              .active {
+                background-color: $bgTertiary;
+                a {
+                  color: $contentOrange;
+                }
+              }
+            }
+            &__right {
+              list-style: none;
+              display: flex;
+              align-items: center;
+              margin-bottom: 0;
+              .right {
+                &__item {
+                  a {
+                    color: $contentInversePrimary;
+                    line-height: 54px;
+                    padding:0 16px;
+                    img {
+                      width: 30px;
+                      height: 30px;
+                      border-radius: 200px;
+                    }
+                  }
+                }
+                &__item {
+                  border-left: 1px solid $lineTertiary;
+                }
+              }
+            }
+          }
+        }
+        &__box {
           &-toggle {
             .toggle__btn {
               cursor: pointer;
@@ -170,7 +233,7 @@
       }
     }
 
-    
+   
   }
 }
 

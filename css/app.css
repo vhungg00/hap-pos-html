@@ -2905,14 +2905,29 @@ footer.footer .footer__bottom {
   background-color: white;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-.CustomizePos__box .box__right .PosItem4__box .box-search {
-  display: flex;
-  align-items: center;
+.CustomizePos__box .box__right .PosItem4__box .box-body-search .search-result {
+  list-style: none;
+  padding: 8px;
+}
+.CustomizePos__box .box__right .PosItem4__box .box-body-search .search-result .item {
+  padding: 8px;
+  font-weight: 500;
+  color: #777777;
+}
+.CustomizePos__box .box__right .PosItem4__box .box-body-search .search-result .item:hover {
+  background-color: rgba(51, 51, 51, 0.2);
+  cursor: pointer;
+}
+.CustomizePos__box .box__right .PosItem4__box .box {
   background-color: white;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   border-radius: 4px;
   border: 1px solid #f2f2f2;
   padding: 8px;
+}
+.CustomizePos__box .box__right .PosItem4__box .box-search {
+  display: flex;
+  align-items: center;
 }
 .CustomizePos__box .box__right .PosItem4__box .box-search i {
   margin-right: 8px;
@@ -3333,6 +3348,111 @@ footer.footer .footer__bottom {
 .CashierItem__body .FaqTabContent .question__box .card-header button {
   padding-left: 0;
   padding-right: 0;
+}
+.CustomerClient__box .box .search__box {
+  display: flex;
+  align-items: center;
+}
+.CustomerClient__box .box .search__box .input-group .input-group-prepend .input-group-text {
+  background-color: transparent;
+  border-right: none;
+  padding: 0 1.2rem;
+}
+.CustomerClient__box .box .search__box .input-group .input-group-prepend .input-group-text i {
+  font-size: 1.4rem;
+}
+.CustomerClient__box .box .search__box .input-group .form-control {
+  font-size: 1.6rem;
+  border-left: none;
+  padding: 2rem 1.4rem;
+}
+.CustomerClient__box .box .search__box .btn-create-user {
+  border: none;
+  background-color: transparent;
+}
+.CustomerClient__box .box .search__box .btn-create-user i {
+  font-size: 3rem;
+  color: #F7781B;
+}
+.CustomerClient__box .box .search__box .modal .modal-content .modal-header {
+  align-items: center;
+}
+.CustomerClient__box .box .search__box .modal .modal-content .modal-header .close {
+  margin: 0;
+}
+.CustomerClient__box .box .search__box .modal .modal-content .modal-header .close i {
+  font-size: 2rem;
+}
+.CustomerClient__box .box .search__box .modal .modal-content .modal-header .modal-title {
+  font-size: 2rem;
+  color: #F7781B;
+  text-align: center;
+}
+.CustomerClient__box .box .search__box .modal .modal-content .modal-body {
+  /* Rounded sliders */
+}
+.CustomerClient__box .box .search__box .modal .modal-content .modal-body .form-control {
+  font-size: 1.6rem;
+}
+.CustomerClient__box .box .search__box .modal .modal-content .modal-body .box {
+  display: flex;
+  align-items: center;
+}
+.CustomerClient__box .box .search__box .modal .modal-content .modal-body .box .text {
+  margin-left: 8px;
+}
+.CustomerClient__box .box .search__box .modal .modal-content .modal-body .switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 20px;
+}
+.CustomerClient__box .box .search__box .modal .modal-content .modal-body .switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.CustomerClient__box .box .search__box .modal .modal-content .modal-body .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.CustomerClient__box .box .search__box .modal .modal-content .modal-body .slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 4px;
+  bottom: 1px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.CustomerClient__box .box .search__box .modal .modal-content .modal-body input:checked + .slider {
+  background-color: #2196F3;
+}
+.CustomerClient__box .box .search__box .modal .modal-content .modal-body input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+.CustomerClient__box .box .search__box .modal .modal-content .modal-body input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+.CustomerClient__box .box .search__box .modal .modal-content .modal-body .slider.round {
+  border-radius: 34px;
+}
+.CustomerClient__box .box .search__box .modal .modal-content .modal-body .slider.round:before {
+  border-radius: 50%;
+}
+.CustomerClient__box .box .search__box .modal .modal-content .modal-footer .btn {
+  font-size: 1.6rem;
 }
 
 /*# sourceMappingURL=app.css.map */

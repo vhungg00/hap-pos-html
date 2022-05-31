@@ -1,7 +1,7 @@
 .CustomizePos {
     &__box {
         .box {
-            &__left{
+            &__left {
                 &-header {
                     font-size: 2rem;
                     font-weight: 600;
@@ -49,7 +49,7 @@
                                 display: block;
                                 padding: 1rem 1.25rem;
                                 color: $contentOrange;
-                
+
                                 border-radius: 8px;
                                 margin-left: 15px;
                             }
@@ -74,7 +74,7 @@
                                                 max-height: 120px;
                                                 object-fit: cover;
                                             }
-                                            .btn__plus{
+                                            .btn__plus {
                                                 position: absolute;
                                                 top: -3px;
                                                 right: 2px;
@@ -98,13 +98,12 @@
                                                             display: grid;
                                                             grid-template-columns: repeat(2, 1fr);
                                                             &__image {
-                                                                &-left{
+                                                                &-left {
                                                                     display: flex;
                                                                     flex-direction: column;
                                                                     gap: 20px;
                                                                     .header {
                                                                         font-weight: 500;
-                            
                                                                     }
                                                                     div {
                                                                         display: flex;
@@ -114,7 +113,7 @@
                                                                             display: block;
                                                                             border: 1px solid $contentRed;
                                                                             border-radius: 8px;
-                            
+
                                                                             color: $contentSecondary;
                                                                             font-weight: 600;
                                                                             cursor: pointer;
@@ -128,13 +127,12 @@
                                                                         }
                                                                     }
                                                                 }
-                                                                &-right{
+                                                                &-right {
                                                                     display: flex;
                                                                     flex-direction: column;
                                                                     gap: 30px;
                                                                     .header {
                                                                         font-weight: 500;
-                                                                        
                                                                     }
                                                                     div {
                                                                         span {
@@ -165,7 +163,7 @@
                                             display: flex;
                                             flex-direction: column;
                                             align-items: center;
-                            
+
                                             .name-box,
                                             .price-box {
                                                 font-size: 1.4rem;
@@ -232,18 +230,34 @@
                 }
                 .PosItem4 {
                     &__box {
+                        .box-body-search {
+                            .search-result {
+                                list-style: none;
+                                padding: 8px;
+                                .item {
+                                    padding: 8px;
+                                    font-weight: 500;
+                                    color: $contentSecondary;
+                                }
+                                .item:hover {
+                                    background-color: #3333;
+                                    cursor: pointer;
+                                }
+                            }
+                        }
                         padding: 8px;
                         background-color: $bgTertiary;
                         box-shadow: 0 2px 4px $shadow;
                         .box {
+                            background-color: $bgTertiary;
+                            box-shadow: 0 2px 4px $shadow;
+                            border-radius: 4px;
+                            border: 1px solid $linePrimary;
+                            padding: 8px;
+
                             &-search {
                                 display: flex;
                                 align-items: center;
-                                background-color: $bgTertiary;
-                                box-shadow: 0 2px 4px $shadow;
-                                border-radius: 4px;
-                                border: 1px solid $linePrimary;
-                                padding: 8px;
                                 i {
                                     margin-right: 8px;
                                     font-size: 2rem;
@@ -264,6 +278,7 @@
                                     }
                                 }
                             }
+
                             &-sale,
                             &-note {
                                 padding: 8px 0;
@@ -340,7 +355,7 @@
                                         border: unset;
                                         &:not(:last-child) {
                                             /* Light/content/Tertiary */
-                
+
                                             border-bottom: 1px solid $contentTertiary;
                                         }
                                     }
@@ -368,15 +383,15 @@
                                             }
                                             .text {
                                                 margin-left: 8px;
-                
+
                                                 font-style: normal;
                                                 font-weight: 700;
                                                 font-size: 16px;
                                                 line-height: 24px;
                                                 /* identical to box height, or 150% */
-                
+
                                                 /* Light/content/Primary */
-                
+
                                                 color: $contentOrange;
                                             }
                                             .plus {
@@ -390,7 +405,6 @@
                                                 align-items: center;
                                                 font-size: 1.6rem;
                                                 color: $contentOrange;
-                
                                             }
                                             &.collapsed {
                                                 .plus {
@@ -409,7 +423,7 @@
                                 }
                             }
                             &-detail {
-                                .btn-detail{
+                                .btn-detail {
                                     width: 100%;
                                     box-shadow: none;
                                     padding: 0;
@@ -454,7 +468,6 @@
                                                             font-size: 1.4rem;
                                                             color: $contentOrange;
                                                         }
-                                                        
                                                     }
                                                     &-item:not(:last-child) {
                                                         border-right: 1px solid $linePrimary;
@@ -481,7 +494,7 @@
                                                 box-shadow: none;
                                                 font-size: 1.6rem;
                                             }
-                
+
                                             i {
                                                 font-size: 2rem;
                                                 color: $contentOrange;
@@ -489,26 +502,26 @@
                                             }
                                         }
                                     }
-                                } 
+                                }
                             }
                             &-price {
-                                &__body{
+                                &__body {
                                     display: flex;
                                     align-items: center;
                                     justify-content: space-between;
                                     .body {
-                                        &__left, &__right {
+                                        &__left,
+                                        &__right {
                                             list-style: none;
                                             display: flex;
                                             flex-direction: column;
                                             gap: 10px;
-                
+
                                             font-size: 1.6rem;
                                             font-weight: 500;
                                         }
                                     }
                                 }
-                
                             }
                         }
                     }
@@ -526,5 +539,4 @@
             }
         }
     }
-    
 }

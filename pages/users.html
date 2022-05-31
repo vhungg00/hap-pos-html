@@ -1,319 +1,473 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Document</title>
 
     <!-- Bootstrap core CSS -->
     <link
-      href="./../vendor/bootstrap-4.6.1/css/bootstrap.min.css"
-      rel="stylesheet"
+            href="./../vendor/bootstrap-4.6.1/css/bootstrap.min.css"
+            rel="stylesheet"
     />
 
-    <link rel="stylesheet" type="text/css" href="./../vendor/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="./../vendor/slick/slick.css"/>
     <link
-      rel="stylesheet"
-      type="text/css"
-      href="./../vendor/slick/slick-theme.css"
+            rel="stylesheet"
+            type="text/css"
+            href="./../vendor/slick/slick-theme.css"
     />
 
     <!-- jquery -->
     <script
-      type="text/javascript"
-      src="https://code.jquery.com/jquery-3.6.0.js"
+            type="text/javascript"
+            src="https://code.jquery.com/jquery-3.6.0.js"
     ></script>
     <script
-      type="text/javascript"
-      src="https://code.jquery.com/jquery-migrate-3.3.2.js"
+            type="text/javascript"
+            src="https://code.jquery.com/jquery-migrate-3.3.2.js"
     ></script>
 
-    <link rel="stylesheet" href="./../css/app.css" />
+    <link rel="stylesheet" href="./../css/app.css"/>
 
     <!-- icon -->
     <link
-      rel="stylesheet"
-      href="./../vendor/font-awesome-4.7.0/css/font-awesome.min.css"
+            rel="stylesheet"
+            href="./../vendor/font-awesome-4.7.0/css/font-awesome.min.css"
     />
     <link
-      rel="stylesheet"
-      href="../vendor/fontawesome-free-6.1.1-web/css/all.css"
+            rel="stylesheet"
+            href="../vendor/fontawesome-free-6.1.1-web/css/all.css"
     />
-  </head>
-  <body>
-    <header class="HeaderCustom" id="HeaderCustom">
-        <div class="HeaderCustom__box  ">
-          <div class="HeaderCustom__box-global">
+</head>
+<body>
+<header class="HeaderCustom" id="HeaderCustom">
+    <div class="HeaderCustom__box  ">
+        <div class="HeaderCustom__box-global">
             <div class="global__nav container d-none d-md-flex">
-              <ul class="nav__left">
-                <li class="left__item active"><a href="">
-                  <i class="fa fa-archive" aria-hidden="true"></i>
-                  <span>POS</span>
-                </a></li>
-                <li class="left__item"><a href="">
-                  <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                  <span>Bán Hàng</span>
-                </a></li>
-                <li class="left__item"><a href="">
-                  <i class="fa fa-user-circle-o" aria-hidden="true"></i>
-                  <span>Khách hàng</span>
-                </a></li>
-                <li class="left__item"><a href="">
-                  <i class="fa fa-id-card" aria-hidden="true"></i>
-                  <span>Thu ngân</span>
-                </a></li>
-                <li class="left__item"><a href="">
-                  <i class="fa-solid fa-box"></i>
-                  <span>Sản phẩm </span>
-                </a></li>
-                <li class="left__item"><a href="">
-                  <i class="fa-solid fa-gear"></i>
-                  <span>Cài đặt</span>
-                </a></li>
-              </ul>
-              <ul class="nav__right">
-                <li class="right__item"><a href="">
-                  <i class="fa-solid fa-wifi"></i>
-                </a></li>
-                <li class="right__item"><a href="">
-                  <i class="fa-solid fa-arrows-rotate"></i>
-                </a></li>
-                <li class="right__item"><a href="">
-                  <img src="../images/avartar.jpg" alt="avatar  ">
-                </a></li>
-              </ul>
+                <ul class="nav__left">
+                    <li class="left__item active"><a href="">
+                        <i class="fa fa-archive" aria-hidden="true"></i>
+                        <span>POS</span>
+                    </a></li>
+                    <li class="left__item"><a href="">
+                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                        <span>Bán Hàng</span>
+                    </a></li>
+                    <li class="left__item"><a href="">
+                        <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                        <span>Khách hàng</span>
+                    </a></li>
+                    <li class="left__item"><a href="">
+                        <i class="fa fa-id-card" aria-hidden="true"></i>
+                        <span>Thu ngân</span>
+                    </a></li>
+                    <li class="left__item"><a href="">
+                        <i class="fa-solid fa-box"></i>
+                        <span>Sản phẩm </span>
+                    </a></li>
+                    <li class="left__item"><a href="">
+                        <i class="fa-solid fa-gear"></i>
+                        <span>Cài đặt</span>
+                    </a></li>
+                </ul>
+                <ul class="nav__right">
+                    <li class="right__item"><a href="">
+                        <i class="fa-solid fa-wifi"></i>
+                    </a></li>
+                    <li class="right__item"><a href="">
+                        <i class="fa-solid fa-arrows-rotate"></i>
+                    </a></li>
+                    <li class="right__item"><a href="">
+                        <img src="../images/avartar.jpg" alt="avatar  ">
+                    </a></li>
+                </ul>
             </div>
             <!--  nav mobie-->
             <div class="global__box container d-flex d-md-none">
-                    <div class="global__box-toggle ">
-                      <label class="toggle__btn" for="toggleHeader">
+                <div class="global__box-toggle ">
+                    <label class="toggle__btn" for="toggleHeader">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M21 5.25H3C2.59 5.25 2.25 4.91 2.25 4.5C2.25 4.09 2.59 3.75 3 3.75H21C21.41 3.75 21.75 4.09 21.75 4.5C21.75 4.91 21.41 5.25 21 5.25Z" fill="#292D32"/>
-                          <path d="M21 10.25H3C2.59 10.25 2.25 9.91 2.25 9.5C2.25 9.09 2.59 8.75 3 8.75H21C21.41 8.75 21.75 9.09 21.75 9.5C21.75 9.91 21.41 10.25 21 10.25Z" fill="#292D32"/>
-                          <path d="M21 15.25H3C2.59 15.25 2.25 14.91 2.25 14.5C2.25 14.09 2.59 13.75 3 13.75H21C21.41 13.75 21.75 14.09 21.75 14.5C21.75 14.91 21.41 15.25 21 15.25Z" fill="#292D32"/>
-                          <path d="M21 20.25H3C2.59 20.25 2.25 19.91 2.25 19.5C2.25 19.09 2.59 18.75 3 18.75H21C21.41 18.75 21.75 19.09 21.75 19.5C21.75 19.91 21.41 20.25 21 20.25Z" fill="#292D32"/>
-                          </svg>
+                            <path d="M21 5.25H3C2.59 5.25 2.25 4.91 2.25 4.5C2.25 4.09 2.59 3.75 3 3.75H21C21.41 3.75 21.75 4.09 21.75 4.5C21.75 4.91 21.41 5.25 21 5.25Z"
+                                  fill="#292D32"/>
+                            <path d="M21 10.25H3C2.59 10.25 2.25 9.91 2.25 9.5C2.25 9.09 2.59 8.75 3 8.75H21C21.41 8.75 21.75 9.09 21.75 9.5C21.75 9.91 21.41 10.25 21 10.25Z"
+                                  fill="#292D32"/>
+                            <path d="M21 15.25H3C2.59 15.25 2.25 14.91 2.25 14.5C2.25 14.09 2.59 13.75 3 13.75H21C21.41 13.75 21.75 14.09 21.75 14.5C21.75 14.91 21.41 15.25 21 15.25Z"
+                                  fill="#292D32"/>
+                            <path d="M21 20.25H3C2.59 20.25 2.25 19.91 2.25 19.5C2.25 19.09 2.59 18.75 3 18.75H21C21.41 18.75 21.75 19.09 21.75 19.5C21.75 19.91 21.41 20.25 21 20.25Z"
+                                  fill="#292D32"/>
+                        </svg>
                     </label>
                     <input
-                    type="checkbox"
-                    class="toggle__input d-none"
-                    name=""
-                    id="toggleHeader"/>
-                <div class="toggle__list">
-                  <label for="toggleHeader" class="list__btn-close">
-                      <i class="fa fa-close"></i>
-                  </label>
-                  <div class="list__body">
-                      <ul>
-                        <li class="list__body-search">
-                          <div class="link__search-form">
-                              <form action="" class="form">
-                                  <div class="form__input">
-                                      <input
-                                          class="form-control"
-                                          type="text"
-                                          placeholder="Nhập tìm kiếm..."
-                                      />
-                                  </div>
-                                  <button class="form__icon btn">
-                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                      <path d="M9.58342 18.125C4.87508 18.125 1.04175 14.2917 1.04175 9.58335C1.04175 4.87502 4.87508 1.04169 9.58342 1.04169C14.2917 1.04169 18.1251 4.87502 18.1251 9.58335C18.1251 14.2917 14.2917 18.125 9.58342 18.125ZM9.58342 2.29169C5.55841 2.29169 2.29175 5.56669 2.29175 9.58335C2.29175 13.6 5.55841 16.875 9.58342 16.875C13.6084 16.875 16.8751 13.6 16.8751 9.58335C16.8751 5.56669 13.6084 2.29169 9.58342 2.29169Z" fill="#292D32"/>
-                                      <path d="M18.3333 18.9583C18.175 18.9583 18.0166 18.9 17.8916 18.775L16.225 17.1083C15.9833 16.8667 15.9833 16.4667 16.225 16.225C16.4666 15.9833 16.8666 15.9833 17.1083 16.225L18.775 17.8917C19.0166 18.1333 19.0166 18.5333 18.775 18.775C18.65 18.9 18.4916 18.9583 18.3333 18.9583Z" fill="#292D32"/>
-                                      </svg>
-                                      
-                                      
-                                      
-                                  </button>
-                              </form>
-                          </div>
-                      </li>
-                          <li class="list__body-link active">
-                              <a href="/" class="">Trang chủ</a>
-                          </li>
-                          <li class="list__body-link">
-                              <a href="/" class="">Giới thiệu</a>
-                          </li>
-                          <li class="list__body-link">
-                              <a href="/" class="">Sản phẩm</a>
-                          </li>
-                          <li class="list__body-link">
-                              <a href="/" class="">Tin tức</a>
-                          </li>
-                          <li class="list__body-link">
-                              <a href="/" class="">Đối tác</a>
-                          </li>
-                          <li class="list__body-link">
-                              <a href="/" class="">Liên hệ</a>
-                          </li>
-                          <li class="list__body-link">
-                              <a href="/" class="">Tuyển dụng</a>
-                          </li>
-                      </ul>
-                  </div>
-              </div>
+                            type="checkbox"
+                            class="toggle__input d-none"
+                            name=""
+                            id="toggleHeader"/>
+                    <div class="toggle__list">
+                        <label for="toggleHeader" class="list__btn-close">
+                            <i class="fa fa-close"></i>
+                        </label>
+                        <div class="list__body">
+                            <ul>
+                                <li class="list__body-search">
+                                    <div class="link__search-form">
+                                        <form action="" class="form">
+                                            <div class="form__input">
+                                                <input
+                                                        class="form-control"
+                                                        type="text"
+                                                        placeholder="Nhập tìm kiếm..."
+                                                />
+                                            </div>
+                                            <button class="form__icon btn">
+                                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                                     xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M9.58342 18.125C4.87508 18.125 1.04175 14.2917 1.04175 9.58335C1.04175 4.87502 4.87508 1.04169 9.58342 1.04169C14.2917 1.04169 18.1251 4.87502 18.1251 9.58335C18.1251 14.2917 14.2917 18.125 9.58342 18.125ZM9.58342 2.29169C5.55841 2.29169 2.29175 5.56669 2.29175 9.58335C2.29175 13.6 5.55841 16.875 9.58342 16.875C13.6084 16.875 16.8751 13.6 16.8751 9.58335C16.8751 5.56669 13.6084 2.29169 9.58342 2.29169Z"
+                                                          fill="#292D32"/>
+                                                    <path d="M18.3333 18.9583C18.175 18.9583 18.0166 18.9 17.8916 18.775L16.225 17.1083C15.9833 16.8667 15.9833 16.4667 16.225 16.225C16.4666 15.9833 16.8666 15.9833 17.1083 16.225L18.775 17.8917C19.0166 18.1333 19.0166 18.5333 18.775 18.775C18.65 18.9 18.4916 18.9583 18.3333 18.9583Z"
+                                                          fill="#292D32"/>
+                                                </svg>
+
+
+                                            </button>
+                                        </form>
+                                    </div>
+                                </li>
+                                <li class="list__body-link active">
+                                    <a href="/" class="">Trang chủ</a>
+                                </li>
+                                <li class="list__body-link">
+                                    <a href="/" class="">Giới thiệu</a>
+                                </li>
+                                <li class="list__body-link">
+                                    <a href="/" class="">Sản phẩm</a>
+                                </li>
+                                <li class="list__body-link">
+                                    <a href="/" class="">Tin tức</a>
+                                </li>
+                                <li class="list__body-link">
+                                    <a href="/" class="">Đối tác</a>
+                                </li>
+                                <li class="list__body-link">
+                                    <a href="/" class="">Liên hệ</a>
+                                </li>
+                                <li class="list__body-link">
+                                    <a href="/" class="">Tuyển dụng</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-               
+                </div>
+
             </div>
             <!--  -->
         </div>
-        </div>
-      </header>
+    </div>
+</header>
 
-   <div class="CustomUser">
-     <div class="CustomUser__box my-4 container">
+<div class="CustomUser">
+    <div class="CustomUser__box my-4 container">
         <div class="row">
-          <div class="col-md-12">
-            <div class="CustomerClient ">
-              <div class="CustomerClient__box ">
-                  <div class="box ">
-                      <div class="search__box my-4 p-3">
-                          <div class="input-group mr-5 ">
-                              <div class="input-group-prepend">
-                                <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-magnifying-glass"></i></span>
-                              </div>
-                              <input type="text" class="form-control" placeholder="Tìm kiếm khách hàng" aria-label="Username" aria-describedby="basic-addon1">
-                            </div>
-                          <button type="button" class="btn-create-user" data-toggle="modal" data-target="#exampleModalLong">
-                              <i class=" fa-solid fa-square-plus"></i>
-                          </button>
-                          
-                          <!-- Modal -->
-                          <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
-                              aria-hidden="true">
-                              <div class="modal-dialog" role="document">
-                                  <div class="modal-content">
-                                      <div class="modal-header">
-                                          <h5 class="modal-title" id="exampleModalLongTitle">Thêm khách hàng mới</h5>
-                                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                              <span aria-hidden="true"><i class="fa fa-times" aria-hidden="true"></i></span>
-                                          </button>
-                                      </div>
-                                      <div class="modal-body">
-                                          <form>
-                                              <div class="form-group">
-                                                  <label for="exampleFormControlInput1">Tên khách hàng</label>
-                                                  <input type="name" class="form-control" id="exampleFormControlInput1">
-                                                </div>
-                                              <div class="form-group">
-                                                <label for="exampleFormControlInput2">Số điện thoại</label>
-                                                <input type="phone" class="form-control" id="exampleFormControlInput2">
-                                              </div>
-                                              <div class="form-group">
-                                                  <label for="exampleFormControlInput3">Email</label>
-                                                  <input type="email" class="form-control" id="exampleFormControlInput3">
-                                              </div>
-                                              <div class="box__control">
-                                                <div class="form-group">
-                                                    <label for="exampleFormControlInput4">Ngày sinh</label>
-                                                    <input type="date" class="form-control" id="exampleFormControlInput4">
-                                                </div>
-                                                <div class="checkbox-custom-1 mb-4">
-                                                  <label class="containerLabel">
-                                                    <span class="text">Nam</span>
-                                          
-                                                    <input type="checkbox" name="" />
-                                                    <span class="checkmark"></span>
-                                                  </label>
-                                                </div>
-                                                <div class="checkbox-custom-1">
-                                                  <label class="containerLabel">
-                                                    <span class="text">Nữ</span>
-                                          
-                                                    <input type="checkbox" name="" />
-                                                    <span class="checkmark"></span>
-                                                  </label>
-                                                </div>
-                                              </div>
-                                                <div class="form-group mt-4">
-                                                  <label for="exampleFormControlInput5">Địa chỉ</label>
-                                                  <input type="Adress" class="form-control" id="exampleFormControlInput5">
-                                                </div>
-                                              <div class="form-group">
-                                                <label for="exampleFormControlSelect5">Nhóm khách hàng</label>
-                                                <select class="form-control" id="exampleFormControlSelect5">
-                                                  <option>1</option>
-                                                  <option>2</option>
-                                                  <option>4</option>
-                                                  <option>4</option>
-                                                  <option>5</option>
-                                                </select>
-                                              </div>
-                                              <div class="box">
-                                                <label class="switch">
-                                                  <input type="checkbox">
-                                                  <span class="slider round"></span>
-                                                </label>
-                                                <div class="text">Hoạt động</div>
-                                              </div>
-                                            </form>
-                                      </div>
-                                      <div class="modal-footer">
-                                          <button type="button" class="btn  btn-info" >Lưu</button>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="body__box">
-                        <div class="body__box-header">
-                          <ul class="box-header__list">
-                            <li>Mã khách hàng</li>
-                            <li>Tên</li>
-                            <li>Điện thoại</li>
-                            <li>Nhóm</li>
-                            <li>Điểm</li>
-                            <li>Chi tiêu</li>
-                            <li>Trạng thái</li>
-                            <li>Hành động</li>
-                          </ul>
-                        </div>
-                        <div class="body__box-item">
-                          <div class="box-item__list">
-                            <li>161</li>
-                            <li>Thúy Phạm</li>
-                            <li>0368573521</li>
-                            <li>Vip 1</li>
-                            <li>172</li>
-                            <li>10,000,000</li>
-                            <li>Hoạt động</li>
-                            <li>
-                              <button type="button" class="btn "> <i class="fa fa-pencil" aria-hidden="true"></i></button>
-                              <button type="button" class="btn "> <i class="fa fa-trash-o" aria-hidden="true"></i></button>
-                            </li>
-                          </div>
-                        </div>
-                        <div class="body__box-item">
-                          <div class="box-item__list">
-                            <li>161</li>
-                            <li>Thúy Phạm</li>
-                            <li>0368573521</li>
-                            <li>Vip 1</li>
-                            <li>172</li>
-                            <li>10,000,000</li>
-                            <li>Hoạt động</li>
-                            <li>
-                              <button type="button" class="btn "> <i class="fa fa-pencil" aria-hidden="true"></i></button>
-                              <button type="button" class="btn "> <i class="fa fa-trash-o" aria-hidden="true"></i></button>
-                             
-                            </li>
-                          </div>
-                        </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-          </div>
-        </div>
-     </div>
-   </div>  
-    
-    <script src="./../vendor/bootstrap-4.6.1/js/bootstrap.bundle.min.js"></script>
-    <script
-      type="text/javascript"
-      src="./../vendor/slick/slick.min.js"
-    ></script>
+            <div class="col-md-12">
+                <div class="CustomerClient ">
+                    <div class="CustomerClient__box ">
+                        <div class="box ">
+                            <div class="search__box my-4 p-3">
+                                <div class="input-group mr-5 ">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="basic-addon1"><i
+                                                class="fa-solid fa-magnifying-glass"></i></span>
+                                    </div>
+                                    <input type="text" class="form-control" placeholder="Tìm kiếm khách hàng"
+                                           aria-label="Username" aria-describedby="basic-addon1">
+                                </div>
+                                <button type="button" class="btn-create-user" data-toggle="modal"
+                                        data-target="#exampleModalLong">
+                                    <i class=" fa-solid fa-square-plus"></i>
+                                </button>
 
-    <script src="./../js/main.js"></script>
-  </body>
+                                <!-- Modal add customer -->
+                                <div class="add-customer modal fade " id="exampleModalLong" tabindex="-1" role="dialog"
+                                     aria-labelledby="exampleModalLongTitle"
+                                     aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLongTitle">Thêm khách hàng
+                                                    mới</h5>
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                        aria-label="Close">
+                                                    <span aria-hidden="true"><i class="fa fa-times"
+                                                                                aria-hidden="true"></i></span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <form action="" id="add-customer">
+                                                    <div class="form-group">
+                                                        <label for="name">Tên khách hàng</label>
+                                                        <input type="name" class="form-control"
+                                                               id="name">
+                                                        <span class="name-error"></span>
+
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="phone">Số điện thoại</label>
+                                                        <input type="phone" class="form-control"
+                                                               id="phone">
+                                                        <span class="phone-error"></span>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="email">Email</label>
+                                                        <input type="email" class="form-control"
+                                                               id="email">
+                                                        <span class="email-error"></span>
+                                                    </div>
+                                                    <div class="box__control">
+                                                        <div class="form-group">
+                                                            <label for="date">Ngày sinh</label>
+                                                            <input type="date" class="form-control"
+                                                                   id="date">
+                                                            <span class="date-error"></span>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <div class="checkbox-custom-1 mb-4">
+                                                                <label class="containerLabel">
+                                                                    <span class="text">Nam</span>
+                                                                    <input type="radio" name="gender" id="male"
+                                                                           value="male" checked/>
+                                                                    <span class="checkmark"></span>
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkbox-custom-1">
+                                                                <label class="containerLabel">
+                                                                    <span class="text">Nữ</span>
+
+                                                                    <input type="radio" name="gender" id="female"
+                                                                           value="female"/>
+                                                                    <span class="checkmark"></span>
+                                                                </label>
+                                                            </div>
+                                                            <span class="gender-error"></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group mt-4">
+                                                        <label for="adress">Địa chỉ</label>
+                                                        <input type="adress" class="form-control"
+                                                               id="adress">
+                                                        <span class="adress-error"></span>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="customer-group">Nhóm khách hàng</label>
+                                                        <select class="form-control customer-group"
+                                                                id="customer-group">
+                                                            <option>1</option>
+                                                            <option>2</option>
+                                                            <option>4</option>
+                                                            <option>4</option>
+                                                            <option>5</option>
+                                                        </select>
+                                                        <span class="customer-group-error"></span>
+                                                    </div>
+                                                    <div class=" form-group box">
+                                                        <label class="switch">
+                                                            <input type="checkbox" id="status">
+                                                            <span class="slider round"></span>
+                                                        </label>
+                                                        <div class="text">Hoạt động</div>
+                                                        <span class="status-error"></span>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="submit" class="btn  btn-info">Lưu</button>
+                                                    </div>
+                                                </form>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Modal edit customer -->
+                                <div class="edit-customer modal fade " id="exampleModalLong2" tabindex="-1" role="dialog"
+                                     aria-labelledby="exampleModalLongTitle2"
+                                     aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLongTitle2">Sửa thông tin khách hàng </h5>
+
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                        aria-label="Close">
+                                                    <span aria-hidden="true"><i class="fa fa-times"
+                                                                                aria-hidden="true"></i></span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <form action="" id="edit_customer">
+                                                    <div class="form-group">
+                                                        <label for="name">Tên khách hàng</label>
+                                                        <input type="name" class="form-control"
+                                                               id="edit_name">
+                                                        <span class="name-error"></span>
+
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="phone">Số điện thoại</label>
+                                                        <input type="phone" class="form-control"
+                                                               id="edit_phone">
+                                                        <span class="phone-error"></span>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="email">Email</label>
+                                                        <input type="email" class="form-control"
+                                                               id="edit_email">
+                                                        <span class="email-error"></span>
+                                                    </div>
+                                                    <div class="box__control">
+                                                        <div class="form-group">
+                                                            <label for="date">Ngày sinh</label>
+                                                            <input type="date" class="form-control"
+                                                                   id="edit_date">
+                                                            <span class="date-error"></span>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <div class="checkbox-custom-1 mb-4">
+                                                                <label class="containerLabel">
+                                                                    <span class="text">Nam</span>
+                                                                    <input type="radio" name="gender" id="edit_male"
+                                                                           value="male" checked/>
+                                                                    <span class="checkmark"></span>
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkbox-custom-1">
+                                                                <label class="containerLabel">
+                                                                    <span class="text">Nữ</span>
+
+                                                                    <input type="radio" name="gender" id="edit_female"
+                                                                           value="female"/>
+                                                                    <span class="checkmark"></span>
+                                                                </label>
+                                                            </div>
+                                                            <span class="gender-error"></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group mt-4">
+                                                        <label for="adress">Địa chỉ</label>
+                                                        <input type="adress" class="form-control"
+                                                               id="edit_adress">
+                                                        <span class="adress-error"></span>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="customer-group">Nhóm khách hàng</label>
+                                                        <select class="form-control customer-group"
+                                                                id="edit_customer-group">
+                                                            <option>1</option>
+                                                            <option>2</option>
+                                                            <option>4</option>
+                                                            <option>4</option>
+                                                            <option>5</option>
+                                                        </select>
+                                                        <span class="customer-group-error"></span>
+                                                    </div>
+                                                    <div class=" form-group box">
+                                                        <label class="switch">
+                                                            <input type="checkbox" id="edit_status">
+                                                            <span class="slider round"></span>
+                                                        </label>
+                                                        <div class="text">Hoạt động</div>
+                                                        <span class="status-error"></span>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="submit" class="btn  btn-info">Lưu</button>
+                                                    </div>
+                                                </form>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="body__box">
+                                <div class="body__box-header">
+                                    <ul class="box-header__list">
+                                        <li>Mã khách hàng</li>
+                                        <li>Tên</li>
+                                        <li>Điện thoại</li>
+                                        <li>Nhóm</li>
+                                        <li>Điểm</li>
+                                        <li>Chi tiêu</li>
+                                        <li>Trạng thái</li>
+                                        <li>Hành động</li>
+                                    </ul>
+                                </div>
+                                <div class="body__box-item item_1">
+                                    <div class="box-item__list">
+                                        <li>1</li>
+                                        <li>Thúy Phạm</li>
+                                        <li>0368573521</li>
+                                        <li>Vip 1</li>
+                                        <li>172</li>
+                                        <li>10,000,000</li>
+                                        <li>Hoạt động</li>
+                                        <li>
+                                            <button type="button" class="btn "onclick="editCustomer(1)" ><i class="fa fa-pencil"
+                                                                                  aria-hidden="true"></i></button>
+                                            <button type="button" class="btn " onclick="removeCustomer(1)"><i class="fa fa-trash-o"
+                                                                                  aria-hidden="true"></i></button>
+                                        </li>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="./../vendor/bootstrap-4.6.1/js/bootstrap.bundle.min.js"></script>
+<script
+        type="text/javascript"
+        src="./../vendor/slick/slick.min.js"
+></script>
+
+<script src="./../js/main.js"></script>
+<script>
+    $(document).on('submit', '#add-customer', (e) => {
+        e.preventDefault();
+        var count = ($('.body__box-item').length)+1 ;
+        var status = $('#status').is(":checked") ? 'Hoạt động' : 'Ngưng hoạt động'
+        var html = ` <div class="body__box-item item_${count}">
+                                    <div class="box-item__list">
+                                        <li>${count}</li>
+                                        <li>${$('#name').val()}</li>
+                                        <li>${$('#phone').val()}</li>
+                                        <li>${$('#customer-group').val()}</li>
+                                        <li>172</li>
+                                        <li>10,000,000</li>
+                                        <li>${status}</li>
+                                        <li>
+                                            <button type="button" class="btn "onclick="editCustomer(${count})"><i class="fa fa-pencil"
+                                                                                  aria-hidden="true"></i></button>
+                                            <button type="button" class="btn " onclick="removeCustomer(${count})"><i class="fa fa-trash-o"
+                                                                                  aria-hidden="true"></i></button>
+
+                                        </li>
+                                    </div>
+                                </div>`
+        $(".body__box").append(html);
+        $('.add-customer').modal('hide')
+    });
+    function removeCustomer (id) {
+        if(confirm("Bạn có chắc chắn muốn xóa!")){
+            console.log(id)
+            $(".item_"+id).remove();
+        }
+    }
+    function editCustomer (id) {
+        $('.edit-customer').modal('show')
+        $('#edit_name').val('Hùng đần');
+    }
+</script>
+</body>
 </html>

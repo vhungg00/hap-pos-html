@@ -1,5 +1,7 @@
 .CustomerClient {
     &__box {
+        border: 1px solid $linePrimary;
+        border-radius: 8px;
         .box {
             .search__box {
                 display: flex;
@@ -129,12 +131,38 @@
             }
             .body__box {
                 &-header {
+                    border-top: 1px solid $linePrimary;
                     .box-header {
                         &__list {
+                            padding: 12px 8px;
+                            color: $contentPrimary;
+                            font-weight: 600;
                             list-style: none;
                             margin-bottom: 0;
                             display: grid;
                             grid-template-columns: repeat(8, 1fr);
+                        }
+                    }
+                }
+                &-item {
+                    border-top: 1px solid $linePrimary;
+                    .box-item {
+                        &__list {
+                            padding:14px 8px;
+
+                            list-style: none;
+                            font-weight: 400;
+                            margin-bottom: 0;
+                            display: grid;
+                            grid-template-columns: repeat(8, 1fr);
+                            li:last-child {
+                                display: flex;
+                                gap: 10px;
+                                button {
+                                    font-size: 1.6rem;
+                                }
+                                
+                            }
                         }
                     }
                 }

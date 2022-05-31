@@ -127,6 +127,18 @@
                     }
                 }
             }
+            .body__box {
+                &-header {
+                    .box-header {
+                        &__list {
+                            list-style: none;
+                            margin-bottom: 0;
+                            display: grid;
+                            grid-template-columns: repeat(8, 1fr);
+                        }
+                    }
+                }
+            }
         }
     }
 }

@@ -430,13 +430,17 @@
                                     .btn-dropdown {
                                         &__top {
                                             display: flex;
-                                            align-items: center;
                                             justify-content: space-between;
+                                            align-items: center;
                                             font-size: 1.6rem;
+                                            font-weight: 600;
+                                            
                                         }
                                         &__bottom {
                                             font-size: 1.6rem;
                                             float: left;
+                                            font-weight: 600;
+
                                         }
                                     }
                                 }

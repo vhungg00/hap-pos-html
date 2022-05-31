@@ -1,1666 +1,1668 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Document</title>
 
     <!-- Bootstrap core CSS -->
     <link
-      href="./../vendor/bootstrap-4.6.1/css/bootstrap.min.css"
-      rel="stylesheet"
+            href="./../vendor/bootstrap-4.6.1/css/bootstrap.min.css"
+            rel="stylesheet"
     />
 
-    <link rel="stylesheet" type="text/css" href="./../vendor/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="./../vendor/slick/slick.css"/>
     <link
-      rel="stylesheet"
-      type="text/css"
-      href="./../vendor/slick/slick-theme.css"
+            rel="stylesheet"
+            type="text/css"
+            href="./../vendor/slick/slick-theme.css"
     />
 
     <!-- jquery -->
     <script
-      type="text/javascript"
-      src="https://code.jquery.com/jquery-3.6.0.js"
+            type="text/javascript"
+            src="https://code.jquery.com/jquery-3.6.0.js"
     ></script>
     <script
-      type="text/javascript"
-      src="https://code.jquery.com/jquery-migrate-3.3.2.js"
+            type="text/javascript"
+            src="https://code.jquery.com/jquery-migrate-3.3.2.js"
     ></script>
 
-    <link rel="stylesheet" href="./../css/app.css" />
+    <link rel="stylesheet" href="./../css/app.css"/>
 
     <!-- icon -->
     <link
-      rel="stylesheet"
-      href="./../vendor/font-awesome-4.7.0/css/font-awesome.min.css"
+            rel="stylesheet"
+            href="./../vendor/font-awesome-4.7.0/css/font-awesome.min.css"
     />
     <link
-      rel="stylesheet"
-      href="../vendor/fontawesome-free-6.1.1-web/css/all.css"
+            rel="stylesheet"
+            href="../vendor/fontawesome-free-6.1.1-web/css/all.css"
     />
-  </head>
-  <body>
-    <header class="HeaderCustom" id="HeaderCustom">
-      <div class="HeaderCustom__box">
+</head>
+<body>
+<header class="HeaderCustom" id="HeaderCustom">
+    <div class="HeaderCustom__box">
         <div class="HeaderCustom__box-global">
-          <div class="global__nav container d-none d-md-flex">
-            <ul class="nav__left">
-              <li class="left__item active">
-                <a href="">
-                  <i class="fa fa-archive" aria-hidden="true"></i>
-                  <span>POS</span>
-                </a>
-              </li>
-              <li class="left__item">
-                <a href="">
-                  <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                  <span>Bán Hàng</span>
-                </a>
-              </li>
-              <li class="left__item">
-                <a href="">
-                  <i class="fa fa-user-circle-o" aria-hidden="true"></i>
-                  <span>Khách hàng</span>
-                </a>
-              </li>
-              <li class="left__item">
-                <a href="">
-                  <i class="fa fa-id-card" aria-hidden="true"></i>
-                  <span>Thu ngân</span>
-                </a>
-              </li>
-              <li class="left__item">
-                <a href="">
-                  <i class="fa-solid fa-box"></i>
-                  <span>Sản phẩm </span>
-                </a>
-              </li>
-              <li class="left__item">
-                <a href="">
-                  <i class="fa-solid fa-gear"></i>
-                  <span>Cài đặt</span>
-                </a>
-              </li>
-            </ul>
-            <ul class="nav__right">
-              <li class="right__item">
-                <a href="">
-                  <i class="fa-solid fa-wifi"></i>
-                </a>
-              </li>
-              <li class="right__item">
-                <a href="">
-                  <i class="fa-solid fa-arrows-rotate"></i>
-                </a>
-              </li>
-              <li class="right__item">
-                <a href="">
-                  <img src="../images/avartar.jpg" alt="avatar  " />
-                </a>
-              </li>
-            </ul>
-          </div>
-          <!--  nav mobie-->
-          <div class="global__box container d-flex d-md-none">
-            <div class="global__box-toggle">
-              <label class="toggle__btn" for="toggleHeader">
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M21 5.25H3C2.59 5.25 2.25 4.91 2.25 4.5C2.25 4.09 2.59 3.75 3 3.75H21C21.41 3.75 21.75 4.09 21.75 4.5C21.75 4.91 21.41 5.25 21 5.25Z"
-                    fill="#292D32"
-                  />
-                  <path
-                    d="M21 10.25H3C2.59 10.25 2.25 9.91 2.25 9.5C2.25 9.09 2.59 8.75 3 8.75H21C21.41 8.75 21.75 9.09 21.75 9.5C21.75 9.91 21.41 10.25 21 10.25Z"
-                    fill="#292D32"
-                  />
-                  <path
-                    d="M21 15.25H3C2.59 15.25 2.25 14.91 2.25 14.5C2.25 14.09 2.59 13.75 3 13.75H21C21.41 13.75 21.75 14.09 21.75 14.5C21.75 14.91 21.41 15.25 21 15.25Z"
-                    fill="#292D32"
-                  />
-                  <path
-                    d="M21 20.25H3C2.59 20.25 2.25 19.91 2.25 19.5C2.25 19.09 2.59 18.75 3 18.75H21C21.41 18.75 21.75 19.09 21.75 19.5C21.75 19.91 21.41 20.25 21 20.25Z"
-                    fill="#292D32"
-                  />
-                </svg>
-              </label>
-              <input
-                type="checkbox"
-                class="toggle__input d-none"
-                name=""
-                id="toggleHeader"
-              />
-              <div class="toggle__list">
-                <label for="toggleHeader" class="list__btn-close">
-                  <i class="fa fa-close"></i>
-                </label>
-                <div class="list__body">
-                  <ul>
-                    <li class="list__body-search">
-                      <div class="link__search-form">
-                        <form action="" class="form">
-                          <div class="form__input">
-                            <input
-                              class="form-control"
-                              type="text"
-                              placeholder="Nhập tìm kiếm..."
-                            />
-                          </div>
-                          <button class="form__icon btn">
-                            <svg
-                              width="20"
-                              height="20"
-                              viewBox="0 0 20 20"
-                              fill="none"
-                              xmlns="http://www.w3.org/2000/svg"
-                            >
-                              <path
-                                d="M9.58342 18.125C4.87508 18.125 1.04175 14.2917 1.04175 9.58335C1.04175 4.87502 4.87508 1.04169 9.58342 1.04169C14.2917 1.04169 18.1251 4.87502 18.1251 9.58335C18.1251 14.2917 14.2917 18.125 9.58342 18.125ZM9.58342 2.29169C5.55841 2.29169 2.29175 5.56669 2.29175 9.58335C2.29175 13.6 5.55841 16.875 9.58342 16.875C13.6084 16.875 16.8751 13.6 16.8751 9.58335C16.8751 5.56669 13.6084 2.29169 9.58342 2.29169Z"
-                                fill="#292D32"
-                              />
-                              <path
-                                d="M18.3333 18.9583C18.175 18.9583 18.0166 18.9 17.8916 18.775L16.225 17.1083C15.9833 16.8667 15.9833 16.4667 16.225 16.225C16.4666 15.9833 16.8666 15.9833 17.1083 16.225L18.775 17.8917C19.0166 18.1333 19.0166 18.5333 18.775 18.775C18.65 18.9 18.4916 18.9583 18.3333 18.9583Z"
-                                fill="#292D32"
-                              />
-                            </svg>
-                          </button>
-                        </form>
-                      </div>
+            <div class="global__nav container d-none d-md-flex">
+                <ul class="nav__left">
+                    <li class="left__item active">
+                        <a href="">
+                            <i class="fa fa-archive" aria-hidden="true"></i>
+                            <span>POS</span>
+                        </a>
                     </li>
-                    <li class="list__body-link active">
-                      <a href="/" class="">Trang chủ</a>
+                    <li class="left__item">
+                        <a href="">
+                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                            <span>Bán Hàng</span>
+                        </a>
                     </li>
-                    <li class="list__body-link">
-                      <a href="/" class="">Giới thiệu</a>
+                    <li class="left__item">
+                        <a href="">
+                            <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                            <span>Khách hàng</span>
+                        </a>
                     </li>
-                    <li class="list__body-link">
-                      <a href="/" class="">Sản phẩm</a>
+                    <li class="left__item">
+                        <a href="">
+                            <i class="fa fa-id-card" aria-hidden="true"></i>
+                            <span>Thu ngân</span>
+                        </a>
                     </li>
-                    <li class="list__body-link">
-                      <a href="/" class="">Tin tức</a>
+                    <li class="left__item">
+                        <a href="">
+                            <i class="fa-solid fa-box"></i>
+                            <span>Sản phẩm </span>
+                        </a>
                     </li>
-                    <li class="list__body-link">
-                      <a href="/" class="">Đối tác</a>
+                    <li class="left__item">
+                        <a href="">
+                            <i class="fa-solid fa-gear"></i>
+                            <span>Cài đặt</span>
+                        </a>
                     </li>
-                    <li class="list__body-link">
-                      <a href="/" class="">Liên hệ</a>
+                </ul>
+                <ul class="nav__right">
+                    <li class="right__item">
+                        <a href="">
+                            <i class="fa-solid fa-wifi"></i>
+                        </a>
                     </li>
-                    <li class="list__body-link">
-                      <a href="/" class="">Tuyển dụng</a>
+                    <li class="right__item">
+                        <a href="">
+                            <i class="fa-solid fa-arrows-rotate"></i>
+                        </a>
                     </li>
-                  </ul>
-                </div>
-              </div>
+                    <li class="right__item">
+                        <a href="">
+                            <img src="../images/avartar.jpg" alt="avatar  "/>
+                        </a>
+                    </li>
+                </ul>
             </div>
-          </div>
-          <!--  -->
-        </div>
-      </div>
-    </header>
-    <div class="CustomizePos">
-      <div class="CustomizePos__box container">
-        <div class="box row">
-          <div class="box__left col-md-8 col-12">
-            <div class="box__left-header my-4">Điểm bán hàng</div>
-            <div class="PosItem1">
-              <div class="PosItem1__box">
-                <div class="box__search">
-                  <div class="input-group">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text" id="basic-addon1"
-                        ><i class="fa fa-search" aria-hidden="true"></i
-                      ></span>
-                    </div>
-                    <input
-                      type="text"
-                      class="form-control"
-                      placeholder="Tìm sản phẩm"
-                      aria-label="Username"
-                      aria-describedby="basic-addon1"
-                    />
-                  </div>
-                </div>
-                <div class="box__qr">
-                  <img src="../images/1__pos/u8.svg" alt="" />
-                </div>
-              </div>
-            </div>
-
-            <!--  -->
-            <div class="CustomTapContent my-4">
-              <div class="CustomTapContent__box row">
-                <div
-                  class="nav flex-column nav-pills col-3"
-                  id="v-pills-tab"
-                  role="tablist"
-                  aria-orientation="vertical"
-                >
-                  <a
-                    class="nav-link active"
-                    id="v-pills-home-tab"
-                    data-toggle="pill"
-                    href="#v-pills-home"
-                    role="tab"
-                    aria-controls="v-pills-home"
-                    aria-selected="true"
-                    >Best-Seller</a
-                  >
-                  <a
-                    class="nav-link"
-                    id="v-pills-profile-tab"
-                    data-toggle="pill"
-                    href="#v-pills-profile"
-                    role="tab"
-                    aria-controls="v-pills-profile"
-                    aria-selected="false"
-                    >Combo Giá Rẻ</a
-                  >
-                  <a
-                    class="nav-link"
-                    id="v-pills-messages-tab"
-                    data-toggle="pill"
-                    href="#v-pills-messages"
-                    role="tab"
-                    aria-controls="v-pills-messages"
-                    aria-selected="false"
-                    >Món mới</a
-                  >
-                  <a
-                    class="nav-link"
-                    id="v-pills-settings-tab"
-                    data-toggle="pill"
-                    href="#v-pills-settings"
-                    role="tab"
-                    aria-controls="v-pills-settings"
-                    aria-selected="false"
-                    >Món khai vị</a
-                  >
-                  <a
-                    class="nav-link"
-                    id="v-pills-1-tab"
-                    data-toggle="pill"
-                    href="#v-pills-1"
-                    role="tab"
-                    aria-controls="v-pills-1"
-                    aria-selected="false"
-                    >Đồ uống</a
-                  >
-                </div>
-                <div class="tab-content col-9" id="v-pills-tabContent">
-                  <div
-                    class="tab-pane fade show active"
-                    id="v-pills-home"
-                    role="tabpanel"
-                    aria-labelledby="v-pills-home-tab"
-                  >
-                    <div class="row">
-                      <div class="col-md-3 col-6">
-                        <div class="PosItem2 mb-4">
-                          <div class="PosItem2__box">
-                            <div class="box__image">
-                              <img src="../images/1__pos/u27.svg" alt="item2" />
-                            </div>
-                            <div class="box__body">
-                              <div class="name-box">Lẩu thái bò</div>
-                              <div class="price-box">VND 256.000</div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-md-3 col-6">
-                        <div class="PosItem2 mb-4">
-                          <div class="PosItem2__box">
-                            <div class="box__image">
-                              <img src="../images/1__pos/u27.svg" alt="item2" />
-                            </div>
-                            <div class="box__body">
-                              <div class="name-box">Lẩu thái bò</div>
-                              <div class="price-box">VND 256.000</div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-md-3 col-6">
-                        <div class="PosItem2 mb-4">
-                          <div class="PosItem2__box">
-                            <div class="box__image">
-                              <img src="../images/1__pos/u27.svg" alt="item2" />
-                            </div>
-                            <div class="box__body">
-                              <div class="name-box">Lẩu thái bò</div>
-                              <div class="price-box">VND 256.000</div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-md-3 col-6">
-                        <div class="PosItem2 mb-4">
-                          <div class="PosItem2__box">
-                            <div class="box__image">
-                              <img src="../images/1__pos/u27.svg" alt="item2" />
-                            </div>
-                            <div class="box__body">
-                              <div class="name-box">Lẩu thái bò</div>
-                              <div class="price-box">VND 256.000</div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-md-3 col-6">
-                        <div class="PosItem2 mb-4">
-                          <div class="PosItem2__box">
-                            <div class="box__image">
-                              <img src="../images/1__pos/u27.svg" alt="item2" />
-                            </div>
-                            <div class="box__body">
-                              <div class="name-box">Lẩu thái bò</div>
-                              <div class="price-box">VND 256.000</div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-md-3 col-6">
-                        <div class="PosItem2 mb-4">
-                          <div class="PosItem2__box">
-                            <div class="box__image">
-                              <img src="../images/1__pos/u27.svg" alt="item2" />
-                            </div>
-                            <div class="box__body">
-                              <div class="name-box">Lẩu thái bò</div>
-                              <div class="price-box">VND 256.000</div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-md-3 col-6">
-                        <div class="PosItem2 mb-4">
-                          <div class="PosItem2__box">
-                            <div class="box__image">
-                              <img src="../images/1__pos/u27.svg" alt="item2" />
-                            </div>
-                            <div class="box__body">
-                              <div class="name-box">Lẩu thái bò</div>
-                              <div class="price-box">VND 256.000</div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-md-3 col-6">
-                        <div class="PosItem2 mb-4">
-                          <div class="PosItem2__box">
-                            <div class="box__image">
-                              <img src="../images/1__pos/u27.svg" alt="item2" />
-                            </div>
-                            <div class="box__body">
-                              <div class="name-box">Lẩu thái bò</div>
-                              <div class="price-box">VND 256.000</div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-md-3 col-6">
-                        <div class="PosItem2 mb-4">
-                          <div class="PosItem2__box">
-                            <div class="box__image">
-                              <!-- Button trigger modal -->
-                              <button
-                                type="button"
-                                class="btn__plus"
-                                data-toggle="modal"
-                                data-target="#exampleModalCenter"
-                              >
-                                <i
-                                  class="fa fa-plus-square"
-                                  aria-hidden="true"
-                                ></i>
-                              </button>
-                              <!-- Modal -->
-                              <div
-                                class="modal fade"
-                                id="exampleModalCenter"
-                                tabindex="-1"
-                                role="dialog"
-                                aria-labelledby="exampleModalCenterTitle"
-                                aria-hidden="true"
-                              >
-                                <div
-                                  class="modal-dialog modal-dialog-centered"
-                                  role="document"
-                                >
-                                  <div class="modal-content">
-                                    <div class="modal-header">
-                                      <h5
-                                        class="modal-title"
-                                        id="exampleModalCenterTitle"
-                                      >
-                                        Sản phẩm cùng loại
-                                      </h5>
-                                      <button
-                                        type="button"
-                                        class="close"
-                                        data-dismiss="modal"
-                                        aria-label="Close"
-                                      >
-                                        <span aria-hidden="true"
-                                          ><i
-                                            class="fa fa-times"
-                                            aria-hidden="true"
-                                          ></i
-                                        ></span>
-                                      </button>
-                                    </div>
-                                    <div class="modal-body">
-                                      <div class="box my-4">
-                                        <div class="box__image-left">
-                                          <div class="header">Kích thước</div>
-                                          <div>
-                                            <span class="active">Vừa</span>
-                                            <span>Lớn</span>
-                                          </div>
-                                        </div>
-                                        <div class="box__image-right">
-                                          <div class="header">Giá</div>
-                                          <div>
-                                            <span>VND 748.000</span>
-                                          </div>
-                                        </div>
-                                      </div>
-                                      <div class="box">
-                                        <div class="box__image-left">
-                                          <div class="header">Topping</div>
-                                          <div>
-                                            <span>Thêm đường</span>
-                                            <span>Ít Đá</span>
-                                          </div>
-                                        </div>
-                                        <div class="box__image-right">
-                                          <div class="header">Giá</div>
-                                          <div>
-                                            <span>VND 748.000</span>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <div class="modal-footer">
-                                      <button type="button" class="btn">
-                                        Thêm vào giỏ hàng
-                                      </button>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                              <img src="../images/1__pos/u52.svg" alt="item2" />
-                            </div>
-                            <div class="box__body">
-                              <div class="name-box">Lẩu thái bò</div>
-                              <div class="price-box">VND 256.000</div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-md-3 col-6">
-                        <div class="PosItem2 mb-4">
-                          <div class="PosItem2__box">
-                            <div class="box__image">
-                              <!-- Button trigger modal -->
-                              <button
-                                type="button"
-                                class="btn__plus"
-                                data-toggle="modal"
-                                data-target="#exampleModalCenter"
-                              >
-                                <i
-                                  class="fa fa-plus-square"
-                                  aria-hidden="true"
-                                ></i>
-                              </button>
-                              <!-- Modal -->
-                              <div
-                                class="modal fade"
-                                id="exampleModalCenter"
-                                tabindex="-1"
-                                role="dialog"
-                                aria-labelledby="exampleModalCenterTitle"
-                                aria-hidden="true"
-                              >
-                                <div
-                                  class="modal-dialog modal-dialog-centered"
-                                  role="document"
-                                >
-                                  <div class="modal-content">
-                                    <div class="modal-header">
-                                      <h5
-                                        class="modal-title"
-                                        id="exampleModalCenterTitle"
-                                      >
-                                        Sản phẩm cùng loại
-                                      </h5>
-                                      <button
-                                        type="button"
-                                        class="close"
-                                        data-dismiss="modal"
-                                        aria-label="Close"
-                                      >
-                                        <span aria-hidden="true"
-                                          ><i
-                                            class="fa fa-times"
-                                            aria-hidden="true"
-                                          ></i
-                                        ></span>
-                                      </button>
-                                    </div>
-                                    <div class="modal-body">
-                                      <div class="box my-4">
-                                        <div class="box__image-left">
-                                          <div class="header">Kích thước</div>
-                                          <div>
-                                            <span class="active">Vừa</span>
-                                            <span>Lớn</span>
-                                          </div>
-                                        </div>
-                                        <div class="box__image-right">
-                                          <div class="header">Giá</div>
-                                          <div>
-                                            <span>VND 748.000</span>
-                                          </div>
-                                        </div>
-                                      </div>
-                                      <div class="box">
-                                        <div class="box__image-left">
-                                          <div class="header">Topping</div>
-                                          <div>
-                                            <span>Thêm đường</span>
-                                            <span>Ít Đá</span>
-                                          </div>
-                                        </div>
-                                        <div class="box__image-right">
-                                          <div class="header">Giá</div>
-                                          <div>
-                                            <span>VND 748.000</span>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <div class="modal-footer">
-                                      <button type="button" class="btn">
-                                        Thêm vào giỏ hàng
-                                      </button>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                              <img src="../images/1__pos/u52.svg" alt="item2" />
-                            </div>
-                            <div class="box__body">
-                              <div class="name-box">Lẩu thái bò</div>
-                              <div class="price-box">VND 256.000</div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-md-3 col-6">
-                        <div class="PosItem2 mb-4">
-                          <div class="PosItem2__box">
-                            <div class="box__image">
-                              <!-- Button trigger modal -->
-                              <button
-                                type="button"
-                                class="btn__plus"
-                                data-toggle="modal"
-                                data-target="#exampleModalCenter"
-                              >
-                                <i
-                                  class="fa fa-plus-square"
-                                  aria-hidden="true"
-                                ></i>
-                              </button>
-                              <!-- Modal -->
-                              <div
-                                class="modal fade"
-                                id="exampleModalCenter"
-                                tabindex="-1"
-                                role="dialog"
-                                aria-labelledby="exampleModalCenterTitle"
-                                aria-hidden="true"
-                              >
-                                <div
-                                  class="modal-dialog modal-dialog-centered"
-                                  role="document"
-                                >
-                                  <div class="modal-content">
-                                    <div class="modal-header">
-                                      <h5
-                                        class="modal-title"
-                                        id="exampleModalCenterTitle"
-                                      >
-                                        Sản phẩm cùng loại
-                                      </h5>
-                                      <button
-                                        type="button"
-                                        class="close"
-                                        data-dismiss="modal"
-                                        aria-label="Close"
-                                      >
-                                        <span aria-hidden="true"
-                                          ><i
-                                            class="fa fa-times"
-                                            aria-hidden="true"
-                                          ></i
-                                        ></span>
-                                      </button>
-                                    </div>
-                                    <div class="modal-body">
-                                      <div class="box my-4">
-                                        <div class="box__image-left">
-                                          <div class="header">Kích thước</div>
-                                          <div>
-                                            <span class="active">Vừa</span>
-                                            <span>Lớn</span>
-                                          </div>
-                                        </div>
-                                        <div class="box__image-right">
-                                          <div class="header">Giá</div>
-                                          <div>
-                                            <span>VND 748.000</span>
-                                          </div>
-                                        </div>
-                                      </div>
-                                      <div class="box">
-                                        <div class="box__image-left">
-                                          <div class="header">Topping</div>
-                                          <div>
-                                            <span>Thêm đường</span>
-                                            <span>Ít Đá</span>
-                                          </div>
-                                        </div>
-                                        <div class="box__image-right">
-                                          <div class="header">Giá</div>
-                                          <div>
-                                            <span>VND 748.000</span>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <div class="modal-footer">
-                                      <button type="button" class="btn">
-                                        Thêm vào giỏ hàng
-                                      </button>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                              <img src="../images/1__pos/u52.svg" alt="item2" />
-                            </div>
-                            <div class="box__body">
-                              <div class="name-box">Lẩu thái bò</div>
-                              <div class="price-box">VND 256.000</div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-md-3 col-6">
-                        <div class="PosItem2 mb-4">
-                          <div class="PosItem2__box">
-                            <div class="box__image">
-                              <!-- Button trigger modal -->
-                              <button
-                                type="button"
-                                class="btn__plus"
-                                data-toggle="modal"
-                                data-target="#exampleModalCenter"
-                              >
-                                <i
-                                  class="fa fa-plus-square"
-                                  aria-hidden="true"
-                                ></i>
-                              </button>
-                              <!-- Modal -->
-                              <div
-                                class="modal fade"
-                                id="exampleModalCenter"
-                                tabindex="-1"
-                                role="dialog"
-                                aria-labelledby="exampleModalCenterTitle"
-                                aria-hidden="true"
-                              >
-                                <div
-                                  class="modal-dialog modal-dialog-centered"
-                                  role="document"
-                                >
-                                  <div class="modal-content">
-                                    <div class="modal-header">
-                                      <h5
-                                        class="modal-title"
-                                        id="exampleModalCenterTitle"
-                                      >
-                                        Sản phẩm cùng loại
-                                      </h5>
-                                      <button
-                                        type="button"
-                                        class="close"
-                                        data-dismiss="modal"
-                                        aria-label="Close"
-                                      >
-                                        <span aria-hidden="true"
-                                          ><i
-                                            class="fa fa-times"
-                                            aria-hidden="true"
-                                          ></i
-                                        ></span>
-                                      </button>
-                                    </div>
-                                    <div class="modal-body">
-                                      <div class="box my-4">
-                                        <div class="box__image-left">
-                                          <div class="header">Kích thước</div>
-                                          <div>
-                                            <span class="active">Vừa</span>
-                                            <span>Lớn</span>
-                                          </div>
-                                        </div>
-                                        <div class="box__image-right">
-                                          <div class="header">Giá</div>
-                                          <div>
-                                            <span>VND 748.000</span>
-                                          </div>
-                                        </div>
-                                      </div>
-                                      <div class="box">
-                                        <div class="box__image-left">
-                                          <div class="header">Topping</div>
-                                          <div>
-                                            <span>Thêm đường</span>
-                                            <span>Ít Đá</span>
-                                          </div>
-                                        </div>
-                                        <div class="box__image-right">
-                                          <div class="header">Giá</div>
-                                          <div>
-                                            <span>VND 748.000</span>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <div class="modal-footer">
-                                      <button type="button" class="btn">
-                                        Thêm vào giỏ hàng
-                                      </button>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                              <img src="../images/1__pos/u52.svg" alt="item2" />
-                            </div>
-                            <div class="box__body">
-                              <div class="name-box">Lẩu thái bò</div>
-                              <div class="price-box">VND 256.000</div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div
-                    class="tab-pane fade"
-                    id="v-pills-profile"
-                    role="tabpanel"
-                    aria-labelledby="v-pills-profile-tab"
-                  >
-                    <div class="row">
-                      <div class="col-md-3 col-6">
-                        <div class="PosItem2 mb-4">
-                          <div class="PosItem2__box">
-                            <div class="box__image">
-                              <img src="../images/1__pos/u27.svg" alt="item2" />
-                            </div>
-                            <div class="box__body">
-                              <div class="name-box">Lẩu thái bò</div>
-                              <div class="price-box">VND 256.000</div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-md-3 col-6">
-                        <div class="PosItem2 mb-4">
-                          <div class="PosItem2__box">
-                            <div class="box__image">
-                              <img src="../images/1__pos/u27.svg" alt="item2" />
-                            </div>
-                            <div class="box__body">
-                              <div class="name-box">Lẩu thái bò</div>
-                              <div class="price-box">VND 256.000</div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-md-3 col-6">
-                        <div class="PosItem2 mb-4">
-                          <div class="PosItem2__box">
-                            <div class="box__image">
-                              <img src="../images/1__pos/u27.svg" alt="item2" />
-                            </div>
-                            <div class="box__body">
-                              <div class="name-box">Lẩu thái bò</div>
-                              <div class="price-box">VND 256.000</div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-md-3 col-6">
-                        <div class="PosItem2 mb-4">
-                          <div class="PosItem2__box">
-                            <div class="box__image">
-                              <img src="../images/1__pos/u27.svg" alt="item2" />
-                            </div>
-                            <div class="box__body">
-                              <div class="name-box">Lẩu thái bò</div>
-                              <div class="price-box">VND 256.000</div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-md-3 col-6">
-                        <div class="PosItem2 mb-4">
-                          <div class="PosItem2__box">
-                            <div class="box__image">
-                              <!-- Button trigger modal -->
-                              <button
-                                type="button"
-                                class="btn__plus"
-                                data-toggle="modal"
-                                data-target="#exampleModalCenter"
-                              >
-                                <i
-                                  class="fa fa-plus-square"
-                                  aria-hidden="true"
-                                ></i>
-                              </button>
-                              <!-- Modal -->
-                              <div
-                                class="modal fade"
-                                id="exampleModalCenter"
-                                tabindex="-1"
-                                role="dialog"
-                                aria-labelledby="exampleModalCenterTitle"
-                                aria-hidden="true"
-                              >
-                                <div
-                                  class="modal-dialog modal-dialog-centered"
-                                  role="document"
-                                >
-                                  <div class="modal-content">
-                                    <div class="modal-header">
-                                      <h5
-                                        class="modal-title"
-                                        id="exampleModalCenterTitle"
-                                      >
-                                        Sản phẩm cùng loại
-                                      </h5>
-                                      <button
-                                        type="button"
-                                        class="close"
-                                        data-dismiss="modal"
-                                        aria-label="Close"
-                                      >
-                                        <span aria-hidden="true"
-                                          ><i
-                                            class="fa fa-times"
-                                            aria-hidden="true"
-                                          ></i
-                                        ></span>
-                                      </button>
-                                    </div>
-                                    <div class="modal-body">
-                                      <div class="box my-4">
-                                        <div class="box__image-left">
-                                          <div class="header">Kích thước</div>
-                                          <div>
-                                            <span class="active">Vừa</span>
-                                            <span>Lớn</span>
-                                          </div>
-                                        </div>
-                                        <div class="box__image-right">
-                                          <div class="header">Giá</div>
-                                          <div>
-                                            <span>VND 748.000</span>
-                                          </div>
-                                        </div>
-                                      </div>
-                                      <div class="box">
-                                        <div class="box__image-left">
-                                          <div class="header">Topping</div>
-                                          <div>
-                                            <span>Thêm đường</span>
-                                            <span>Ít Đá</span>
-                                          </div>
-                                        </div>
-                                        <div class="box__image-right">
-                                          <div class="header">Giá</div>
-                                          <div>
-                                            <span>VND 748.000</span>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <div class="modal-footer">
-                                      <button type="button" class="btn">
-                                        Thêm vào giỏ hàng
-                                      </button>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                              <img src="../images/1__pos/u52.svg" alt="item2" />
-                            </div>
-                            <div class="box__body">
-                              <div class="name-box">Lẩu thái bò</div>
-                              <div class="price-box">VND 256.000</div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-md-3 col-6">
-                        <div class="PosItem2 mb-4">
-                          <div class="PosItem2__box">
-                            <div class="box__image">
-                              <!-- Button trigger modal -->
-                              <button
-                                type="button"
-                                class="btn__plus"
-                                data-toggle="modal"
-                                data-target="#exampleModalCenter"
-                              >
-                                <i
-                                  class="fa fa-plus-square"
-                                  aria-hidden="true"
-                                ></i>
-                              </button>
-                              <!-- Modal -->
-                              <div
-                                class="modal fade"
-                                id="exampleModalCenter"
-                                tabindex="-1"
-                                role="dialog"
-                                aria-labelledby="exampleModalCenterTitle"
-                                aria-hidden="true"
-                              >
-                                <div
-                                  class="modal-dialog modal-dialog-centered"
-                                  role="document"
-                                >
-                                  <div class="modal-content">
-                                    <div class="modal-header">
-                                      <h5
-                                        class="modal-title"
-                                        id="exampleModalCenterTitle"
-                                      >
-                                        Sản phẩm cùng loại
-                                      </h5>
-                                      <button
-                                        type="button"
-                                        class="close"
-                                        data-dismiss="modal"
-                                        aria-label="Close"
-                                      >
-                                        <span aria-hidden="true"
-                                          ><i
-                                            class="fa fa-times"
-                                            aria-hidden="true"
-                                          ></i
-                                        ></span>
-                                      </button>
-                                    </div>
-                                    <div class="modal-body">
-                                      <div class="box my-4">
-                                        <div class="box__image-left">
-                                          <div class="header">Kích thước</div>
-                                          <div>
-                                            <span class="active">Vừa</span>
-                                            <span>Lớn</span>
-                                          </div>
-                                        </div>
-                                        <div class="box__image-right">
-                                          <div class="header">Giá</div>
-                                          <div>
-                                            <span>VND 748.000</span>
-                                          </div>
-                                        </div>
-                                      </div>
-                                      <div class="box">
-                                        <div class="box__image-left">
-                                          <div class="header">Topping</div>
-                                          <div>
-                                            <span>Thêm đường</span>
-                                            <span>Ít Đá</span>
-                                          </div>
-                                        </div>
-                                        <div class="box__image-right">
-                                          <div class="header">Giá</div>
-                                          <div>
-                                            <span>VND 748.000</span>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <div class="modal-footer">
-                                      <button type="button" class="btn">
-                                        Thêm vào giỏ hàng
-                                      </button>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                              <img src="../images/1__pos/u52.svg" alt="item2" />
-                            </div>
-                            <div class="box__body">
-                              <div class="name-box">Lẩu thái bò</div>
-                              <div class="price-box">VND 256.000</div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-md-3 col-6">
-                        <div class="PosItem2 mb-4">
-                          <div class="PosItem2__box">
-                            <div class="box__image">
-                              <!-- Button trigger modal -->
-                              <button
-                                type="button"
-                                class="btn__plus"
-                                data-toggle="modal"
-                                data-target="#exampleModalCenter"
-                              >
-                                <i
-                                  class="fa fa-plus-square"
-                                  aria-hidden="true"
-                                ></i>
-                              </button>
-                              <!-- Modal -->
-                              <div
-                                class="modal fade"
-                                id="exampleModalCenter"
-                                tabindex="-1"
-                                role="dialog"
-                                aria-labelledby="exampleModalCenterTitle"
-                                aria-hidden="true"
-                              >
-                                <div
-                                  class="modal-dialog modal-dialog-centered"
-                                  role="document"
-                                >
-                                  <div class="modal-content">
-                                    <div class="modal-header">
-                                      <h5
-                                        class="modal-title"
-                                        id="exampleModalCenterTitle"
-                                      >
-                                        Sản phẩm cùng loại
-                                      </h5>
-                                      <button
-                                        type="button"
-                                        class="close"
-                                        data-dismiss="modal"
-                                        aria-label="Close"
-                                      >
-                                        <span aria-hidden="true"
-                                          ><i
-                                            class="fa fa-times"
-                                            aria-hidden="true"
-                                          ></i
-                                        ></span>
-                                      </button>
-                                    </div>
-                                    <div class="modal-body">
-                                      <div class="box my-4">
-                                        <div class="box__image-left">
-                                          <div class="header">Kích thước</div>
-                                          <div>
-                                            <span class="active">Vừa</span>
-                                            <span>Lớn</span>
-                                          </div>
-                                        </div>
-                                        <div class="box__image-right">
-                                          <div class="header">Giá</div>
-                                          <div>
-                                            <span>VND 748.000</span>
-                                          </div>
-                                        </div>
-                                      </div>
-                                      <div class="box">
-                                        <div class="box__image-left">
-                                          <div class="header">Topping</div>
-                                          <div>
-                                            <span>Thêm đường</span>
-                                            <span>Ít Đá</span>
-                                          </div>
-                                        </div>
-                                        <div class="box__image-right">
-                                          <div class="header">Giá</div>
-                                          <div>
-                                            <span>VND 748.000</span>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <div class="modal-footer">
-                                      <button type="button" class="btn">
-                                        Thêm vào giỏ hàng
-                                      </button>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                              <img src="../images/1__pos/u52.svg" alt="item2" />
-                            </div>
-                            <div class="box__body">
-                              <div class="name-box">Lẩu thái bò</div>
-                              <div class="price-box">VND 256.000</div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-md-3 col-6">
-                        <div class="PosItem2 mb-4">
-                          <div class="PosItem2__box">
-                            <div class="box__image">
-                              <!-- Button trigger modal -->
-                              <button
-                                type="button"
-                                class="btn__plus"
-                                data-toggle="modal"
-                                data-target="#exampleModalCenter"
-                              >
-                                <i
-                                  class="fa fa-plus-square"
-                                  aria-hidden="true"
-                                ></i>
-                              </button>
-                              <!-- Modal -->
-                              <div
-                                class="modal fade"
-                                id="exampleModalCenter"
-                                tabindex="-1"
-                                role="dialog"
-                                aria-labelledby="exampleModalCenterTitle"
-                                aria-hidden="true"
-                              >
-                                <div
-                                  class="modal-dialog modal-dialog-centered"
-                                  role="document"
-                                >
-                                  <div class="modal-content">
-                                    <div class="modal-header">
-                                      <h5
-                                        class="modal-title"
-                                        id="exampleModalCenterTitle"
-                                      >
-                                        Sản phẩm cùng loại
-                                      </h5>
-                                      <button
-                                        type="button"
-                                        class="close"
-                                        data-dismiss="modal"
-                                        aria-label="Close"
-                                      >
-                                        <span aria-hidden="true"
-                                          ><i
-                                            class="fa fa-times"
-                                            aria-hidden="true"
-                                          ></i
-                                        ></span>
-                                      </button>
-                                    </div>
-                                    <div class="modal-body">
-                                      <div class="box my-4">
-                                        <div class="box__image-left">
-                                          <div class="header">Kích thước</div>
-                                          <div>
-                                            <span class="active">Vừa</span>
-                                            <span>Lớn</span>
-                                          </div>
-                                        </div>
-                                        <div class="box__image-right">
-                                          <div class="header">Giá</div>
-                                          <div>
-                                            <span>VND 748.000</span>
-                                          </div>
-                                        </div>
-                                      </div>
-                                      <div class="box">
-                                        <div class="box__image-left">
-                                          <div class="header">Topping</div>
-                                          <div>
-                                            <span>Thêm đường</span>
-                                            <span>Ít Đá</span>
-                                          </div>
-                                        </div>
-                                        <div class="box__image-right">
-                                          <div class="header">Giá</div>
-                                          <div>
-                                            <span>VND 748.000</span>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <div class="modal-footer">
-                                      <button type="button" class="btn">
-                                        Thêm vào giỏ hàng
-                                      </button>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                              <img src="../images/1__pos/u52.svg" alt="item2" />
-                            </div>
-                            <div class="box__body">
-                              <div class="name-box">Lẩu thái bò</div>
-                              <div class="price-box">VND 256.000</div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div
-                    class="tab-pane fade"
-                    id="v-pills-messages"
-                    role="tabpanel"
-                    aria-labelledby="v-pills-messages-tab"
-                  >
-                    ...
-                  </div>
-                  <div
-                    class="tab-pane fade"
-                    id="v-pills-settings"
-                    role="tabpanel"
-                    aria-labelledby="v-pills-settings-tab"
-                  >
-                    ...
-                  </div>
-                  <div
-                    class="tab-pane fade"
-                    id="v-pills-1"
-                    role="tabpanel"
-                    aria-labelledby="v-pills-1-tab"
-                  >
-                    Tạ Văn Hùng
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!--  -->
-          </div>
-          <div class="box__right col-md-4 col-12">
-            <div class="PosItem3 my-4">
-              <div class="PosItem3__box">
-                <div class="box__left">
-                  <div class="text">Chi tiết giỏ hàng</div>
-                  <i class="fa fa-gift" aria-hidden="true"></i>
-                  <div class="quantity">4</div>
-                </div>
-                <div class="box__right">
-                  <div
-                    class="btn-group"
-                    role="group"
-                    aria-label="Basic example"
-                  >
-                    <button type="button" class="btn btn-secondary">
-                      <svg
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M18 12.75H6C5.59 12.75 5.25 12.41 5.25 12C5.25 11.59 5.59 11.25 6 11.25H18C18.41 11.25 18.75 11.59 18.75 12C18.75 12.41 18.41 12.75 18 12.75Z"
-                          fill="#777777"
-                        />
-                      </svg>
-                    </button>
-                    <button type="button" class="btn btn-secondary">1</button>
-                    <button type="button" class="btn btn-secondary">
-                      <svg
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M18 12.75H6C5.59 12.75 5.25 12.41 5.25 12C5.25 11.59 5.59 11.25 6 11.25H18C18.41 11.25 18.75 11.59 18.75 12C18.75 12.41 18.41 12.75 18 12.75Z"
-                          fill="#777777"
-                        />
-                        <path
-                          d="M12 18.75C11.59 18.75 11.25 18.41 11.25 18V6C11.25 5.59 11.59 5.25 12 5.25C12.41 5.25 12.75 5.59 12.75 6V18C12.75 18.41 12.41 18.75 12 18.75Z"
-                          fill="#777777"
-                        />
-                      </svg>
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="PosItem4 my-4">
-              <div class="PosItem4__box">
-                <div class="box">
-                  <div class="box-search mb-4">
-                    <i class="fa fa-user-o" aria-hidden="true"></i>
-                    <div class="input-group">
-                      <div class="input-group-prepend">
-                        <span onclick="handleOnclick()" id="submit-search" class="input-group-text " id="basic-addon1"
-                          ><i class="fa fa-search" aria-hidden="true"></i
-                        ></span>
-                      </div>
-                      <input
-                        type="text"
-                        class="form-control"
-                        name="name"
-                        id="search-term"
-                        aria-label="Username"
-                        aria-describedby="basic-addon1"
-                      />
-                    </div>
-                  </div>
-                  <div class="box-body-search">
-                    <ul class="menu search-result">
-  
-                    </ul>
-                  </div>
-
-                </div>
-                <div class="box-note">
-                  <div class="note__body">
-                    <button
-                      type="button"
-                      class="note__body-btn"
-                      data-toggle="modal"
-                      data-target="#exampleModal"
-                    >
-                      <i class="fa fa-pencil" aria-hidden="true"></i>
-                      <div class="text">Ghi chú</div>
-                    </button>
-
-                    <!-- Modal -->
-                    <div
-                      class="modal fade"
-                      id="exampleModal"
-                      tabindex="-1"
-                      role="dialog"
-                      aria-labelledby="exampleModalLabel"
-                      aria-hidden="true"
-                    >
-                      <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">
-                              Ghi chú đơn hàng
-                            </h5>
-                            <button
-                              type="button"
-                              class="close"
-                              data-dismiss="modal"
-                              aria-label="Close"
-                            >
-                              <span aria-hidden="true"
-                                ><i class="fa fa-times" aria-hidden="true"></i
-                              ></span>
-                            </button>
-                          </div>
-                          <div class="modal-body">
-                            <div class="form-group">
-                              <textarea
-                                class="form-control"
-                                placeholder="Nhập ghi chú đơn hàng"
-                                id="exampleFormControlTextarea1"
-                                rows="5"
-                              ></textarea>
-                            </div>
-                          </div>
-                          <div class="modal-footer">
-                            <button type="button" class="btn">Gửi</button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="box-sale mb-4">
-                  <div class="sale__body">
-                    <i class="fa fa-gift" aria-hidden="true"></i>
-                    <div class="form-group">
-                      <input
-                        type="email"
-                        class="form-control"
-                        id="exampleFormControlInput1"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div class="box-cart">
-                  <div class="accordion" id="accordionExample">
-                    <div class="card">
-                      <div class="card-header" id="headingOne">
-                        <button
-                          class="btn"
-                          type="button"
-                          data-toggle="collapse"
-                          data-target="#collapseOne"
-                          aria-expanded="true"
-                          aria-controls="collapseOne"
+            <!--  nav mobie-->
+            <div class="global__box container d-flex d-md-none">
+                <div class="global__box-toggle">
+                    <label class="toggle__btn" for="toggleHeader">
+                        <svg
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
                         >
-                          <div>
-                            <img src="../images/1__pos/u165.svg" alt="" />
-                            <span class="text"> Dùng tại cửa hàng </span>
-                          </div>
-                          <div class="plus">
-                            <i
-                              class="fa fa-chevron-down"
-                              aria-hidden="true"
-                            ></i>
-                          </div>
-
-                          <div class="minus">
-                            <i class="fa fa-chevron-up" aria-hidden="true"></i>
-                          </div>
-                        </button>
-                      </div>
-
-                      <div
-                        id="collapseOne"
-                        class="collapse show"
-                        aria-labelledby="headingOne"
-                        data-parent="#accordionExample"
-                      >
-                        <div class="card-body">
-                          Some placeholder content for the first accordion
-                          panel. This panel is shown by default, thanks to the
-                          <code>.show</code> class.
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="box-detail my-4">
-                  <a
-                    class="btn btn-detail"
-                    data-toggle="collapse"
-                    href="#multiCollapseExample1"
-                    role="button"
-                    aria-expanded="false"
-                    aria-controls="multiCollapseExample1"
-                  >
-                    <div class="btn-dropdown__top">
-                      <div class="top__item">X1 Set 3 lẩu</div>
-                      <div class="top__item">VNĐ 748,000</div>
-                    </div>
-                    <div class="btn-dropdown__bottom">M</div>
-                  </a>
-                  <div class="row">
-                    <div class="col">
-                      <div
-                        class="collapse multi-collapse"
-                        id="multiCollapseExample1"
-                      >
-                        <div class="card card-body">
-                          <div class="dropdown-menu__header">
-                            X2 Lẩu thái bò
-                          </div>
-                          <div class="dropdown-menu__body">
-                            <div class="body__box">
-                              <div class="body__box-item">
-                                <p>Số lượng</p>
-                                <span>2</span>
-                              </div>
-                              <div class="body__box-item">
-                                <p>Giá</p>
-                                <span>768.000</span>
-                              </div>
-                              <div class="body__box-item">
-                                <p>Chiết khấu</p>
-                                <span>0.00</span>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="dropdown-menu__footer">
-                            <button
-                              type="button"
-                              class="btn"
-                              data-toggle="modal"
-                              data-target="#exampleModalLong"
-                            >
-                              <i class="fa fa-pencil" aria-hidden="true"></i>
-                            </button>
-
-                            <!-- Modal -->
-                            <div
-                              class="modal fade"
-                              id="exampleModalLong"
-                              tabindex="-1"
-                              role="dialog"
-                              aria-labelledby="exampleModalLongTitle"
-                              aria-hidden="true"
-                            >
-                              <div class="modal-dialog" role="document">
-                                <div class="modal-content">
-                                  <div class="modal-header">
-                                    <h5
-                                      class="modal-title"
-                                      id="exampleModalLongTitle"
-                                    >
-                                      Ghi chú
-                                    </h5>
-                                    <button
-                                      type="button"
-                                      class="close"
-                                      data-dismiss="modal"
-                                      aria-label="Close"
-                                    >
-                                      <span aria-hidden="true"
-                                        ><i
-                                          class="fa fa-times"
-                                          aria-hidden="true"
-                                        ></i
-                                      ></span>
-                                    </button>
-                                  </div>
-                                  <div class="modal-body">
-                                    <div class="form-group">
-                                      <textarea
-                                        class="form-control"
-                                        placeholder="Nhập ghi chú"
-                                        id="exampleFormControlTextarea1"
-                                        rows="5"
-                                      ></textarea>
+                            <path
+                                    d="M21 5.25H3C2.59 5.25 2.25 4.91 2.25 4.5C2.25 4.09 2.59 3.75 3 3.75H21C21.41 3.75 21.75 4.09 21.75 4.5C21.75 4.91 21.41 5.25 21 5.25Z"
+                                    fill="#292D32"
+                            />
+                            <path
+                                    d="M21 10.25H3C2.59 10.25 2.25 9.91 2.25 9.5C2.25 9.09 2.59 8.75 3 8.75H21C21.41 8.75 21.75 9.09 21.75 9.5C21.75 9.91 21.41 10.25 21 10.25Z"
+                                    fill="#292D32"
+                            />
+                            <path
+                                    d="M21 15.25H3C2.59 15.25 2.25 14.91 2.25 14.5C2.25 14.09 2.59 13.75 3 13.75H21C21.41 13.75 21.75 14.09 21.75 14.5C21.75 14.91 21.41 15.25 21 15.25Z"
+                                    fill="#292D32"
+                            />
+                            <path
+                                    d="M21 20.25H3C2.59 20.25 2.25 19.91 2.25 19.5C2.25 19.09 2.59 18.75 3 18.75H21C21.41 18.75 21.75 19.09 21.75 19.5C21.75 19.91 21.41 20.25 21 20.25Z"
+                                    fill="#292D32"
+                            />
+                        </svg>
+                    </label>
+                    <input
+                            type="checkbox"
+                            class="toggle__input d-none"
+                            name=""
+                            id="toggleHeader"
+                    />
+                    <div class="toggle__list">
+                        <label for="toggleHeader" class="list__btn-close">
+                            <i class="fa fa-close"></i>
+                        </label>
+                        <div class="list__body">
+                            <ul>
+                                <li class="list__body-search">
+                                    <div class="link__search-form">
+                                        <form action="" class="form">
+                                            <div class="form__input">
+                                                <input
+                                                        class="form-control"
+                                                        type="text"
+                                                        placeholder="Nhập tìm kiếm..."
+                                                />
+                                            </div>
+                                            <button class="form__icon btn">
+                                                <svg
+                                                        width="20"
+                                                        height="20"
+                                                        viewBox="0 0 20 20"
+                                                        fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                >
+                                                    <path
+                                                            d="M9.58342 18.125C4.87508 18.125 1.04175 14.2917 1.04175 9.58335C1.04175 4.87502 4.87508 1.04169 9.58342 1.04169C14.2917 1.04169 18.1251 4.87502 18.1251 9.58335C18.1251 14.2917 14.2917 18.125 9.58342 18.125ZM9.58342 2.29169C5.55841 2.29169 2.29175 5.56669 2.29175 9.58335C2.29175 13.6 5.55841 16.875 9.58342 16.875C13.6084 16.875 16.8751 13.6 16.8751 9.58335C16.8751 5.56669 13.6084 2.29169 9.58342 2.29169Z"
+                                                            fill="#292D32"
+                                                    />
+                                                    <path
+                                                            d="M18.3333 18.9583C18.175 18.9583 18.0166 18.9 17.8916 18.775L16.225 17.1083C15.9833 16.8667 15.9833 16.4667 16.225 16.225C16.4666 15.9833 16.8666 15.9833 17.1083 16.225L18.775 17.8917C19.0166 18.1333 19.0166 18.5333 18.775 18.775C18.65 18.9 18.4916 18.9583 18.3333 18.9583Z"
+                                                            fill="#292D32"
+                                                    />
+                                                </svg>
+                                            </button>
+                                        </form>
                                     </div>
-                                  </div>
-                                  <div class="modal-footer">
-                                    <button
-                                      type="button"
-                                      class="btn  btn-info"
-                                    >
-                                      Gửi
-                                    </button>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <button type="button" class="btn "><i class="fa fa-trash-o" aria-hidden="true"></i></button>
-                            
-                          </div>
+                                </li>
+                                <li class="list__body-link active">
+                                    <a href="/" class="">Trang chủ</a>
+                                </li>
+                                <li class="list__body-link">
+                                    <a href="/" class="">Giới thiệu</a>
+                                </li>
+                                <li class="list__body-link">
+                                    <a href="/" class="">Sản phẩm</a>
+                                </li>
+                                <li class="list__body-link">
+                                    <a href="/" class="">Tin tức</a>
+                                </li>
+                                <li class="list__body-link">
+                                    <a href="/" class="">Đối tác</a>
+                                </li>
+                                <li class="list__body-link">
+                                    <a href="/" class="">Liên hệ</a>
+                                </li>
+                                <li class="list__body-link">
+                                    <a href="/" class="">Tuyển dụng</a>
+                                </li>
+                            </ul>
                         </div>
-                      </div>
                     </div>
-                  </div>
                 </div>
-                <div class="box-price">
-                  <div class="box-price__body">
-                    <ul class="body__left">
-                      <li>Tổng tính</li>
-                      <li>Giảm giá</li>
-                      <li>Thuế</li>
-                      <li>Tổng cộng</li>
-                    </ul>
-                    <ul class="body__right">
-                      <li>VND 1,244,000</li>
-                      <li>VND 512,000</li>
-                      <li>VND 0</li>
-                      <li style="color: #f7781b">VND 713,000</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="box__btn mt-4">
-                <button type="button" class="btn btn-danger">Thanh toán</button>
-                <button type="button" class="btn btn-danger">Giữ</button>
-              </div>
             </div>
-          </div>
+            <!--  -->
         </div>
-      </div>
     </div>
-    <div style="height: 100vh"></div>
-    <script>
-      $("body").addClass("product-filter-body");
+</header>
+<div class="CustomizePos">
+    <div class="CustomizePos__box container">
+        <div class="box row">
+            <div class="box__left col-md-8 col-12">
+                <div class="box__left-header my-4">Điểm bán hàng</div>
+                <div class="PosItem1">
+                    <div class="PosItem1__box">
+                        <div class="box__search">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                      <span class="input-group-text" id="basic-addon1"
+                      ><i class="fa fa-search" aria-hidden="true"></i
+                      ></span>
+                                </div>
+                                <input
+                                        type="text"
+                                        class="form-control"
+                                        placeholder="Tìm sản phẩm"
+                                        aria-label="Username"
+                                        aria-describedby="basic-addon1"
+                                />
+                            </div>
+                        </div>
+                        <div class="box__qr">
+                            <img src="../images/1__pos/u8.svg" alt=""/>
+                        </div>
+                    </div>
+                </div>
 
-      let search_time_out;
-      $("#search-term").on("keyup", function (e) {
+                <!--  -->
+                <div class="CustomTapContent my-4">
+                    <div class="CustomTapContent__box row">
+                        <div
+                                class="nav flex-column nav-pills col-3"
+                                id="v-pills-tab"
+                                role="tablist"
+                                aria-orientation="vertical"
+                        >
+                            <a
+                                    class="nav-link active"
+                                    id="v-pills-home-tab"
+                                    data-toggle="pill"
+                                    href="#v-pills-home"
+                                    role="tab"
+                                    aria-controls="v-pills-home"
+                                    aria-selected="true"
+                            >Best-Seller</a
+                            >
+                            <a
+                                    class="nav-link"
+                                    id="v-pills-profile-tab"
+                                    data-toggle="pill"
+                                    href="#v-pills-profile"
+                                    role="tab"
+                                    aria-controls="v-pills-profile"
+                                    aria-selected="false"
+                            >Combo Giá Rẻ</a
+                            >
+                            <a
+                                    class="nav-link"
+                                    id="v-pills-messages-tab"
+                                    data-toggle="pill"
+                                    href="#v-pills-messages"
+                                    role="tab"
+                                    aria-controls="v-pills-messages"
+                                    aria-selected="false"
+                            >Món mới</a
+                            >
+                            <a
+                                    class="nav-link"
+                                    id="v-pills-settings-tab"
+                                    data-toggle="pill"
+                                    href="#v-pills-settings"
+                                    role="tab"
+                                    aria-controls="v-pills-settings"
+                                    aria-selected="false"
+                            >Món khai vị</a
+                            >
+                            <a
+                                    class="nav-link"
+                                    id="v-pills-1-tab"
+                                    data-toggle="pill"
+                                    href="#v-pills-1"
+                                    role="tab"
+                                    aria-controls="v-pills-1"
+                                    aria-selected="false"
+                            >Đồ uống</a
+                            >
+                        </div>
+                        <div class="tab-content col-9" id="v-pills-tabContent">
+                            <div
+                                    class="tab-pane fade show active"
+                                    id="v-pills-home"
+                                    role="tabpanel"
+                                    aria-labelledby="v-pills-home-tab"
+                            >
+                                <div class="row">
+                                    <div class="col-md-3 col-6">
+                                        <div class="PosItem2 mb-4">
+                                            <div class="PosItem2__box">
+                                                <div class="box__image">
+                                                    <img src="../images/1__pos/u27.svg" alt="item2"/>
+                                                </div>
+                                                <div class="box__body">
+                                                    <div class="name-box">Lẩu thái bò</div>
+                                                    <div class="price-box">VND 256.000</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-6">
+                                        <div class="PosItem2 mb-4">
+                                            <div class="PosItem2__box">
+                                                <div class="box__image">
+                                                    <img src="../images/1__pos/u27.svg" alt="item2"/>
+                                                </div>
+                                                <div class="box__body">
+                                                    <div class="name-box">Lẩu thái bò</div>
+                                                    <div class="price-box">VND 256.000</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-6">
+                                        <div class="PosItem2 mb-4">
+                                            <div class="PosItem2__box">
+                                                <div class="box__image">
+                                                    <img src="../images/1__pos/u27.svg" alt="item2"/>
+                                                </div>
+                                                <div class="box__body">
+                                                    <div class="name-box">Lẩu thái bò</div>
+                                                    <div class="price-box">VND 256.000</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-6">
+                                        <div class="PosItem2 mb-4">
+                                            <div class="PosItem2__box">
+                                                <div class="box__image">
+                                                    <img src="../images/1__pos/u27.svg" alt="item2"/>
+                                                </div>
+                                                <div class="box__body">
+                                                    <div class="name-box">Lẩu thái bò</div>
+                                                    <div class="price-box">VND 256.000</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-6">
+                                        <div class="PosItem2 mb-4">
+                                            <div class="PosItem2__box">
+                                                <div class="box__image">
+                                                    <img src="../images/1__pos/u27.svg" alt="item2"/>
+                                                </div>
+                                                <div class="box__body">
+                                                    <div class="name-box">Lẩu thái bò</div>
+                                                    <div class="price-box">VND 256.000</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-6">
+                                        <div class="PosItem2 mb-4">
+                                            <div class="PosItem2__box">
+                                                <div class="box__image">
+                                                    <img src="../images/1__pos/u27.svg" alt="item2"/>
+                                                </div>
+                                                <div class="box__body">
+                                                    <div class="name-box">Lẩu thái bò</div>
+                                                    <div class="price-box">VND 256.000</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-6">
+                                        <div class="PosItem2 mb-4">
+                                            <div class="PosItem2__box">
+                                                <div class="box__image">
+                                                    <img src="../images/1__pos/u27.svg" alt="item2"/>
+                                                </div>
+                                                <div class="box__body">
+                                                    <div class="name-box">Lẩu thái bò</div>
+                                                    <div class="price-box">VND 256.000</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-6">
+                                        <div class="PosItem2 mb-4">
+                                            <div class="PosItem2__box">
+                                                <div class="box__image">
+                                                    <img src="../images/1__pos/u27.svg" alt="item2"/>
+                                                </div>
+                                                <div class="box__body">
+                                                    <div class="name-box">Lẩu thái bò</div>
+                                                    <div class="price-box">VND 256.000</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-6">
+                                        <div class="PosItem2 mb-4">
+                                            <div class="PosItem2__box">
+                                                <div class="box__image">
+                                                    <!-- Button trigger modal -->
+                                                    <button
+                                                            type="button"
+                                                            class="btn__plus"
+                                                            data-toggle="modal"
+                                                            data-target="#exampleModalCenter"
+                                                    >
+                                                        <i
+                                                                class="fa fa-plus-square"
+                                                                aria-hidden="true"
+                                                        ></i>
+                                                    </button>
+                                                    <!-- Modal -->
+                                                    <div
+                                                            class="modal fade"
+                                                            id="exampleModalCenter"
+                                                            tabindex="-1"
+                                                            role="dialog"
+                                                            aria-labelledby="exampleModalCenterTitle"
+                                                            aria-hidden="true"
+                                                    >
+                                                        <div
+                                                                class="modal-dialog modal-dialog-centered"
+                                                                role="document"
+                                                        >
+                                                            <div class="modal-content">
+                                                                <div class="modal-header">
+                                                                    <h5
+                                                                            class="modal-title"
+                                                                            id="exampleModalCenterTitle"
+                                                                    >
+                                                                        Sản phẩm cùng loại
+                                                                    </h5>
+                                                                    <button
+                                                                            type="button"
+                                                                            class="close"
+                                                                            data-dismiss="modal"
+                                                                            aria-label="Close"
+                                                                    >
+                                        <span aria-hidden="true"
+                                        ><i
+                                                class="fa fa-times"
+                                                aria-hidden="true"
+                                        ></i
+                                        ></span>
+                                                                    </button>
+                                                                </div>
+                                                                <div class="modal-body">
+                                                                    <div class="box my-4">
+                                                                        <div class="box__image-left">
+                                                                            <div class="header">Kích thước</div>
+                                                                            <div>
+                                                                                <span class="active">Vừa</span>
+                                                                                <span>Lớn</span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="box__image-right">
+                                                                            <div class="header">Giá</div>
+                                                                            <div>
+                                                                                <span>VND 748.000</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="box">
+                                                                        <div class="box__image-left">
+                                                                            <div class="header">Topping</div>
+                                                                            <div>
+                                                                                <span>Thêm đường</span>
+                                                                                <span>Ít Đá</span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="box__image-right">
+                                                                            <div class="header">Giá</div>
+                                                                            <div>
+                                                                                <span>VND 748.000</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="modal-footer">
+                                                                    <button type="button" class="btn">
+                                                                        Thêm vào giỏ hàng
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <img src="../images/1__pos/u52.svg" alt="item2"/>
+                                                </div>
+                                                <div class="box__body">
+                                                    <div class="name-box">Lẩu thái bò</div>
+                                                    <div class="price-box">VND 256.000</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-6">
+                                        <div class="PosItem2 mb-4">
+                                            <div class="PosItem2__box">
+                                                <div class="box__image">
+                                                    <!-- Button trigger modal -->
+                                                    <button
+                                                            type="button"
+                                                            class="btn__plus"
+                                                            data-toggle="modal"
+                                                            data-target="#exampleModalCenter"
+                                                    >
+                                                        <i
+                                                                class="fa fa-plus-square"
+                                                                aria-hidden="true"
+                                                        ></i>
+                                                    </button>
+                                                    <!-- Modal -->
+                                                    <div
+                                                            class="modal fade"
+                                                            id="exampleModalCenter"
+                                                            tabindex="-1"
+                                                            role="dialog"
+                                                            aria-labelledby="exampleModalCenterTitle"
+                                                            aria-hidden="true"
+                                                    >
+                                                        <div
+                                                                class="modal-dialog modal-dialog-centered"
+                                                                role="document"
+                                                        >
+                                                            <div class="modal-content">
+                                                                <div class="modal-header">
+                                                                    <h5
+                                                                            class="modal-title"
+                                                                            id="exampleModalCenterTitle"
+                                                                    >
+                                                                        Sản phẩm cùng loại
+                                                                    </h5>
+                                                                    <button
+                                                                            type="button"
+                                                                            class="close"
+                                                                            data-dismiss="modal"
+                                                                            aria-label="Close"
+                                                                    >
+                                        <span aria-hidden="true"
+                                        ><i
+                                                class="fa fa-times"
+                                                aria-hidden="true"
+                                        ></i
+                                        ></span>
+                                                                    </button>
+                                                                </div>
+                                                                <div class="modal-body">
+                                                                    <div class="box my-4">
+                                                                        <div class="box__image-left">
+                                                                            <div class="header">Kích thước</div>
+                                                                            <div>
+                                                                                <span class="active">Vừa</span>
+                                                                                <span>Lớn</span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="box__image-right">
+                                                                            <div class="header">Giá</div>
+                                                                            <div>
+                                                                                <span>VND 748.000</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="box">
+                                                                        <div class="box__image-left">
+                                                                            <div class="header">Topping</div>
+                                                                            <div>
+                                                                                <span>Thêm đường</span>
+                                                                                <span>Ít Đá</span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="box__image-right">
+                                                                            <div class="header">Giá</div>
+                                                                            <div>
+                                                                                <span>VND 748.000</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="modal-footer">
+                                                                    <button type="button" class="btn">
+                                                                        Thêm vào giỏ hàng
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <img src="../images/1__pos/u52.svg" alt="item2"/>
+                                                </div>
+                                                <div class="box__body">
+                                                    <div class="name-box">Lẩu thái bò</div>
+                                                    <div class="price-box">VND 256.000</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-6">
+                                        <div class="PosItem2 mb-4">
+                                            <div class="PosItem2__box">
+                                                <div class="box__image">
+                                                    <!-- Button trigger modal -->
+                                                    <button
+                                                            type="button"
+                                                            class="btn__plus"
+                                                            data-toggle="modal"
+                                                            data-target="#exampleModalCenter"
+                                                    >
+                                                        <i
+                                                                class="fa fa-plus-square"
+                                                                aria-hidden="true"
+                                                        ></i>
+                                                    </button>
+                                                    <!-- Modal -->
+                                                    <div
+                                                            class="modal fade"
+                                                            id="exampleModalCenter"
+                                                            tabindex="-1"
+                                                            role="dialog"
+                                                            aria-labelledby="exampleModalCenterTitle"
+                                                            aria-hidden="true"
+                                                    >
+                                                        <div
+                                                                class="modal-dialog modal-dialog-centered"
+                                                                role="document"
+                                                        >
+                                                            <div class="modal-content">
+                                                                <div class="modal-header">
+                                                                    <h5
+                                                                            class="modal-title"
+                                                                            id="exampleModalCenterTitle"
+                                                                    >
+                                                                        Sản phẩm cùng loại
+                                                                    </h5>
+                                                                    <button
+                                                                            type="button"
+                                                                            class="close"
+                                                                            data-dismiss="modal"
+                                                                            aria-label="Close"
+                                                                    >
+                                        <span aria-hidden="true"
+                                        ><i
+                                                class="fa fa-times"
+                                                aria-hidden="true"
+                                        ></i
+                                        ></span>
+                                                                    </button>
+                                                                </div>
+                                                                <div class="modal-body">
+                                                                    <div class="box my-4">
+                                                                        <div class="box__image-left">
+                                                                            <div class="header">Kích thước</div>
+                                                                            <div>
+                                                                                <span class="active">Vừa</span>
+                                                                                <span>Lớn</span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="box__image-right">
+                                                                            <div class="header">Giá</div>
+                                                                            <div>
+                                                                                <span>VND 748.000</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="box">
+                                                                        <div class="box__image-left">
+                                                                            <div class="header">Topping</div>
+                                                                            <div>
+                                                                                <span>Thêm đường</span>
+                                                                                <span>Ít Đá</span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="box__image-right">
+                                                                            <div class="header">Giá</div>
+                                                                            <div>
+                                                                                <span>VND 748.000</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="modal-footer">
+                                                                    <button type="button" class="btn">
+                                                                        Thêm vào giỏ hàng
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <img src="../images/1__pos/u52.svg" alt="item2"/>
+                                                </div>
+                                                <div class="box__body">
+                                                    <div class="name-box">Lẩu thái bò</div>
+                                                    <div class="price-box">VND 256.000</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-6">
+                                        <div class="PosItem2 mb-4">
+                                            <div class="PosItem2__box">
+                                                <div class="box__image">
+                                                    <!-- Button trigger modal -->
+                                                    <button
+                                                            type="button"
+                                                            class="btn__plus"
+                                                            data-toggle="modal"
+                                                            data-target="#exampleModalCenter"
+                                                    >
+                                                        <i
+                                                                class="fa fa-plus-square"
+                                                                aria-hidden="true"
+                                                        ></i>
+                                                    </button>
+                                                    <!-- Modal -->
+                                                    <div
+                                                            class="modal fade"
+                                                            id="exampleModalCenter"
+                                                            tabindex="-1"
+                                                            role="dialog"
+                                                            aria-labelledby="exampleModalCenterTitle"
+                                                            aria-hidden="true"
+                                                    >
+                                                        <div
+                                                                class="modal-dialog modal-dialog-centered"
+                                                                role="document"
+                                                        >
+                                                            <div class="modal-content">
+                                                                <div class="modal-header">
+                                                                    <h5
+                                                                            class="modal-title"
+                                                                            id="exampleModalCenterTitle"
+                                                                    >
+                                                                        Sản phẩm cùng loại
+                                                                    </h5>
+                                                                    <button
+                                                                            type="button"
+                                                                            class="close"
+                                                                            data-dismiss="modal"
+                                                                            aria-label="Close"
+                                                                    >
+                                        <span aria-hidden="true"
+                                        ><i
+                                                class="fa fa-times"
+                                                aria-hidden="true"
+                                        ></i
+                                        ></span>
+                                                                    </button>
+                                                                </div>
+                                                                <div class="modal-body">
+                                                                    <div class="box my-4">
+                                                                        <div class="box__image-left">
+                                                                            <div class="header">Kích thước</div>
+                                                                            <div>
+                                                                                <span class="active">Vừa</span>
+                                                                                <span>Lớn</span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="box__image-right">
+                                                                            <div class="header">Giá</div>
+                                                                            <div>
+                                                                                <span>VND 748.000</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="box">
+                                                                        <div class="box__image-left">
+                                                                            <div class="header">Topping</div>
+                                                                            <div>
+                                                                                <span>Thêm đường</span>
+                                                                                <span>Ít Đá</span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="box__image-right">
+                                                                            <div class="header">Giá</div>
+                                                                            <div>
+                                                                                <span>VND 748.000</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="modal-footer">
+                                                                    <button type="button" class="btn">
+                                                                        Thêm vào giỏ hàng
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <img src="../images/1__pos/u52.svg" alt="item2"/>
+                                                </div>
+                                                <div class="box__body">
+                                                    <div class="name-box">Lẩu thái bò</div>
+                                                    <div class="price-box">VND 256.000</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                    class="tab-pane fade"
+                                    id="v-pills-profile"
+                                    role="tabpanel"
+                                    aria-labelledby="v-pills-profile-tab"
+                            >
+                                <div class="row">
+                                    <div class="col-md-3 col-6">
+                                        <div class="PosItem2 mb-4">
+                                            <div class="PosItem2__box">
+                                                <div class="box__image">
+                                                    <img src="../images/1__pos/u27.svg" alt="item2"/>
+                                                </div>
+                                                <div class="box__body">
+                                                    <div class="name-box">Lẩu thái bò</div>
+                                                    <div class="price-box">VND 256.000</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-6">
+                                        <div class="PosItem2 mb-4">
+                                            <div class="PosItem2__box">
+                                                <div class="box__image">
+                                                    <img src="../images/1__pos/u27.svg" alt="item2"/>
+                                                </div>
+                                                <div class="box__body">
+                                                    <div class="name-box">Lẩu thái bò</div>
+                                                    <div class="price-box">VND 256.000</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-6">
+                                        <div class="PosItem2 mb-4">
+                                            <div class="PosItem2__box">
+                                                <div class="box__image">
+                                                    <img src="../images/1__pos/u27.svg" alt="item2"/>
+                                                </div>
+                                                <div class="box__body">
+                                                    <div class="name-box">Lẩu thái bò</div>
+                                                    <div class="price-box">VND 256.000</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-6">
+                                        <div class="PosItem2 mb-4">
+                                            <div class="PosItem2__box">
+                                                <div class="box__image">
+                                                    <img src="../images/1__pos/u27.svg" alt="item2"/>
+                                                </div>
+                                                <div class="box__body">
+                                                    <div class="name-box">Lẩu thái bò</div>
+                                                    <div class="price-box">VND 256.000</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-6">
+                                        <div class="PosItem2 mb-4">
+                                            <div class="PosItem2__box">
+                                                <div class="box__image">
+                                                    <!-- Button trigger modal -->
+                                                    <button
+                                                            type="button"
+                                                            class="btn__plus"
+                                                            data-toggle="modal"
+                                                            data-target="#exampleModalCenter"
+                                                    >
+                                                        <i
+                                                                class="fa fa-plus-square"
+                                                                aria-hidden="true"
+                                                        ></i>
+                                                    </button>
+                                                    <!-- Modal -->
+                                                    <div
+                                                            class="modal fade"
+                                                            id="exampleModalCenter"
+                                                            tabindex="-1"
+                                                            role="dialog"
+                                                            aria-labelledby="exampleModalCenterTitle"
+                                                            aria-hidden="true"
+                                                    >
+                                                        <div
+                                                                class="modal-dialog modal-dialog-centered"
+                                                                role="document"
+                                                        >
+                                                            <div class="modal-content">
+                                                                <div class="modal-header">
+                                                                    <h5
+                                                                            class="modal-title"
+                                                                            id="exampleModalCenterTitle"
+                                                                    >
+                                                                        Sản phẩm cùng loại
+                                                                    </h5>
+                                                                    <button
+                                                                            type="button"
+                                                                            class="close"
+                                                                            data-dismiss="modal"
+                                                                            aria-label="Close"
+                                                                    >
+                                        <span aria-hidden="true"
+                                        ><i
+                                                class="fa fa-times"
+                                                aria-hidden="true"
+                                        ></i
+                                        ></span>
+                                                                    </button>
+                                                                </div>
+                                                                <div class="modal-body">
+                                                                    <div class="box my-4">
+                                                                        <div class="box__image-left">
+                                                                            <div class="header">Kích thước</div>
+                                                                            <div>
+                                                                                <span class="active">Vừa</span>
+                                                                                <span>Lớn</span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="box__image-right">
+                                                                            <div class="header">Giá</div>
+                                                                            <div>
+                                                                                <span>VND 748.000</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="box">
+                                                                        <div class="box__image-left">
+                                                                            <div class="header">Topping</div>
+                                                                            <div>
+                                                                                <span>Thêm đường</span>
+                                                                                <span>Ít Đá</span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="box__image-right">
+                                                                            <div class="header">Giá</div>
+                                                                            <div>
+                                                                                <span>VND 748.000</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="modal-footer">
+                                                                    <button type="button" class="btn">
+                                                                        Thêm vào giỏ hàng
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <img src="../images/1__pos/u52.svg" alt="item2"/>
+                                                </div>
+                                                <div class="box__body">
+                                                    <div class="name-box">Lẩu thái bò</div>
+                                                    <div class="price-box">VND 256.000</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-6">
+                                        <div class="PosItem2 mb-4">
+                                            <div class="PosItem2__box">
+                                                <div class="box__image">
+                                                    <!-- Button trigger modal -->
+                                                    <button
+                                                            type="button"
+                                                            class="btn__plus"
+                                                            data-toggle="modal"
+                                                            data-target="#exampleModalCenter"
+                                                    >
+                                                        <i
+                                                                class="fa fa-plus-square"
+                                                                aria-hidden="true"
+                                                        ></i>
+                                                    </button>
+                                                    <!-- Modal -->
+                                                    <div
+                                                            class="modal fade"
+                                                            id="exampleModalCenter"
+                                                            tabindex="-1"
+                                                            role="dialog"
+                                                            aria-labelledby="exampleModalCenterTitle"
+                                                            aria-hidden="true"
+                                                    >
+                                                        <div
+                                                                class="modal-dialog modal-dialog-centered"
+                                                                role="document"
+                                                        >
+                                                            <div class="modal-content">
+                                                                <div class="modal-header">
+                                                                    <h5
+                                                                            class="modal-title"
+                                                                            id="exampleModalCenterTitle"
+                                                                    >
+                                                                        Sản phẩm cùng loại
+                                                                    </h5>
+                                                                    <button
+                                                                            type="button"
+                                                                            class="close"
+                                                                            data-dismiss="modal"
+                                                                            aria-label="Close"
+                                                                    >
+                                        <span aria-hidden="true"
+                                        ><i
+                                                class="fa fa-times"
+                                                aria-hidden="true"
+                                        ></i
+                                        ></span>
+                                                                    </button>
+                                                                </div>
+                                                                <div class="modal-body">
+                                                                    <div class="box my-4">
+                                                                        <div class="box__image-left">
+                                                                            <div class="header">Kích thước</div>
+                                                                            <div>
+                                                                                <span class="active">Vừa</span>
+                                                                                <span>Lớn</span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="box__image-right">
+                                                                            <div class="header">Giá</div>
+                                                                            <div>
+                                                                                <span>VND 748.000</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="box">
+                                                                        <div class="box__image-left">
+                                                                            <div class="header">Topping</div>
+                                                                            <div>
+                                                                                <span>Thêm đường</span>
+                                                                                <span>Ít Đá</span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="box__image-right">
+                                                                            <div class="header">Giá</div>
+                                                                            <div>
+                                                                                <span>VND 748.000</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="modal-footer">
+                                                                    <button type="button" class="btn">
+                                                                        Thêm vào giỏ hàng
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <img src="../images/1__pos/u52.svg" alt="item2"/>
+                                                </div>
+                                                <div class="box__body">
+                                                    <div class="name-box">Lẩu thái bò</div>
+                                                    <div class="price-box">VND 256.000</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-6">
+                                        <div class="PosItem2 mb-4">
+                                            <div class="PosItem2__box">
+                                                <div class="box__image">
+                                                    <!-- Button trigger modal -->
+                                                    <button
+                                                            type="button"
+                                                            class="btn__plus"
+                                                            data-toggle="modal"
+                                                            data-target="#exampleModalCenter"
+                                                    >
+                                                        <i
+                                                                class="fa fa-plus-square"
+                                                                aria-hidden="true"
+                                                        ></i>
+                                                    </button>
+                                                    <!-- Modal -->
+                                                    <div
+                                                            class="modal fade"
+                                                            id="exampleModalCenter"
+                                                            tabindex="-1"
+                                                            role="dialog"
+                                                            aria-labelledby="exampleModalCenterTitle"
+                                                            aria-hidden="true"
+                                                    >
+                                                        <div
+                                                                class="modal-dialog modal-dialog-centered"
+                                                                role="document"
+                                                        >
+                                                            <div class="modal-content">
+                                                                <div class="modal-header">
+                                                                    <h5
+                                                                            class="modal-title"
+                                                                            id="exampleModalCenterTitle"
+                                                                    >
+                                                                        Sản phẩm cùng loại
+                                                                    </h5>
+                                                                    <button
+                                                                            type="button"
+                                                                            class="close"
+                                                                            data-dismiss="modal"
+                                                                            aria-label="Close"
+                                                                    >
+                                        <span aria-hidden="true"
+                                        ><i
+                                                class="fa fa-times"
+                                                aria-hidden="true"
+                                        ></i
+                                        ></span>
+                                                                    </button>
+                                                                </div>
+                                                                <div class="modal-body">
+                                                                    <div class="box my-4">
+                                                                        <div class="box__image-left">
+                                                                            <div class="header">Kích thước</div>
+                                                                            <div>
+                                                                                <span class="active">Vừa</span>
+                                                                                <span>Lớn</span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="box__image-right">
+                                                                            <div class="header">Giá</div>
+                                                                            <div>
+                                                                                <span>VND 748.000</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="box">
+                                                                        <div class="box__image-left">
+                                                                            <div class="header">Topping</div>
+                                                                            <div>
+                                                                                <span>Thêm đường</span>
+                                                                                <span>Ít Đá</span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="box__image-right">
+                                                                            <div class="header">Giá</div>
+                                                                            <div>
+                                                                                <span>VND 748.000</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="modal-footer">
+                                                                    <button type="button" class="btn">
+                                                                        Thêm vào giỏ hàng
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <img src="../images/1__pos/u52.svg" alt="item2"/>
+                                                </div>
+                                                <div class="box__body">
+                                                    <div class="name-box">Lẩu thái bò</div>
+                                                    <div class="price-box">VND 256.000</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-6">
+                                        <div class="PosItem2 mb-4">
+                                            <div class="PosItem2__box">
+                                                <div class="box__image">
+                                                    <!-- Button trigger modal -->
+                                                    <button
+                                                            type="button"
+                                                            class="btn__plus"
+                                                            data-toggle="modal"
+                                                            data-target="#exampleModalCenter"
+                                                    >
+                                                        <i
+                                                                class="fa fa-plus-square"
+                                                                aria-hidden="true"
+                                                        ></i>
+                                                    </button>
+                                                    <!-- Modal -->
+                                                    <div
+                                                            class="modal fade"
+                                                            id="exampleModalCenter"
+                                                            tabindex="-1"
+                                                            role="dialog"
+                                                            aria-labelledby="exampleModalCenterTitle"
+                                                            aria-hidden="true"
+                                                    >
+                                                        <div
+                                                                class="modal-dialog modal-dialog-centered"
+                                                                role="document"
+                                                        >
+                                                            <div class="modal-content">
+                                                                <div class="modal-header">
+                                                                    <h5
+                                                                            class="modal-title"
+                                                                            id="exampleModalCenterTitle"
+                                                                    >
+                                                                        Sản phẩm cùng loại
+                                                                    </h5>
+                                                                    <button
+                                                                            type="button"
+                                                                            class="close"
+                                                                            data-dismiss="modal"
+                                                                            aria-label="Close"
+                                                                    >
+                                        <span aria-hidden="true"
+                                        ><i
+                                                class="fa fa-times"
+                                                aria-hidden="true"
+                                        ></i
+                                        ></span>
+                                                                    </button>
+                                                                </div>
+                                                                <div class="modal-body">
+                                                                    <div class="box my-4">
+                                                                        <div class="box__image-left">
+                                                                            <div class="header">Kích thước</div>
+                                                                            <div>
+                                                                                <span class="active">Vừa</span>
+                                                                                <span>Lớn</span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="box__image-right">
+                                                                            <div class="header">Giá</div>
+                                                                            <div>
+                                                                                <span>VND 748.000</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="box">
+                                                                        <div class="box__image-left">
+                                                                            <div class="header">Topping</div>
+                                                                            <div>
+                                                                                <span>Thêm đường</span>
+                                                                                <span>Ít Đá</span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="box__image-right">
+                                                                            <div class="header">Giá</div>
+                                                                            <div>
+                                                                                <span>VND 748.000</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="modal-footer">
+                                                                    <button type="button" class="btn">
+                                                                        Thêm vào giỏ hàng
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <img src="../images/1__pos/u52.svg" alt="item2"/>
+                                                </div>
+                                                <div class="box__body">
+                                                    <div class="name-box">Lẩu thái bò</div>
+                                                    <div class="price-box">VND 256.000</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                    class="tab-pane fade"
+                                    id="v-pills-messages"
+                                    role="tabpanel"
+                                    aria-labelledby="v-pills-messages-tab"
+                            >
+                                ...
+                            </div>
+                            <div
+                                    class="tab-pane fade"
+                                    id="v-pills-settings"
+                                    role="tabpanel"
+                                    aria-labelledby="v-pills-settings-tab"
+                            >
+                                ...
+                            </div>
+                            <div
+                                    class="tab-pane fade"
+                                    id="v-pills-1"
+                                    role="tabpanel"
+                                    aria-labelledby="v-pills-1-tab"
+                            >
+                                Tạ Văn Hùng
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--  -->
+            </div>
+            <div class="box__right col-md-4 col-12">
+                <div class="PosItem3 my-4">
+                    <div class="PosItem3__box">
+                        <div class="box__left">
+                            <div class="text">Chi tiết giỏ hàng</div>
+                            <i class="fa fa-gift" aria-hidden="true"></i>
+                            <div class="quantity">4</div>
+                        </div>
+                        <div class="box__right">
+                            <div
+                                    class="btn-group"
+                                    role="group"
+                                    aria-label="Basic example"
+                            >
+                                <button type="button" class="btn btn-secondary">
+                                    <svg
+                                            width="24"
+                                            height="24"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                                d="M18 12.75H6C5.59 12.75 5.25 12.41 5.25 12C5.25 11.59 5.59 11.25 6 11.25H18C18.41 11.25 18.75 11.59 18.75 12C18.75 12.41 18.41 12.75 18 12.75Z"
+                                                fill="#777777"
+                                        />
+                                    </svg>
+                                </button>
+                                <button type="button" class="btn btn-secondary">1</button>
+                                <button type="button" class="btn btn-secondary">
+                                    <svg
+                                            width="24"
+                                            height="24"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                                d="M18 12.75H6C5.59 12.75 5.25 12.41 5.25 12C5.25 11.59 5.59 11.25 6 11.25H18C18.41 11.25 18.75 11.59 18.75 12C18.75 12.41 18.41 12.75 18 12.75Z"
+                                                fill="#777777"
+                                        />
+                                        <path
+                                                d="M12 18.75C11.59 18.75 11.25 18.41 11.25 18V6C11.25 5.59 11.59 5.25 12 5.25C12.41 5.25 12.75 5.59 12.75 6V18C12.75 18.41 12.41 18.75 12 18.75Z"
+                                                fill="#777777"
+                                        />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="PosItem4 my-4">
+                    <div class="PosItem4__box">
+                        <div class="box">
+                            <div class="box-search mb-4">
+                                <i class="fa fa-user-o" aria-hidden="true"></i>
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                        <span onclick="handleOnclick()" id="submit-search" class="input-group-text " id="basic-addon1"
+                        ><i class="fa fa-search" aria-hidden="true"></i
+                        ></span>
+                                    </div>
+                                    <input
+                                            type="text"
+                                            class="form-control"
+                                            name="name"
+                                            id="search-term"
+                                            aria-label="Username"
+                                            aria-describedby="basic-addon1"
+                                    />
+                                </div>
+                            </div>
+                            <div class="box-body-search">
+                                <ul class="menu search-result">
+
+                                </ul>
+                            </div>
+
+                        </div>
+                        <div class="box-note">
+                            <div class="note__body">
+                                <button
+                                        type="button"
+                                        class="note__body-btn"
+                                        data-toggle="modal"
+                                        data-target="#exampleModal"
+                                >
+                                    <i class="fa fa-pencil" aria-hidden="true"></i>
+                                    <div class="text">Ghi chú</div>
+                                </button>
+
+                                <!-- Modal -->
+                                <div
+                                        class="modal fade"
+                                        id="exampleModal"
+                                        tabindex="-1"
+                                        role="dialog"
+                                        aria-labelledby="exampleModalLabel"
+                                        aria-hidden="true"
+                                >
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">
+                                                    Ghi chú đơn hàng
+                                                </h5>
+                                                <button
+                                                        type="button"
+                                                        class="close"
+                                                        data-dismiss="modal"
+                                                        aria-label="Close"
+                                                >
+                              <span aria-hidden="true"
+                              ><i class="fa fa-times" aria-hidden="true"></i
+                              ></span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="form-group">
+                              <textarea
+                                      class="form-control"
+                                      placeholder="Nhập ghi chú đơn hàng"
+                                      id="exampleFormControlTextarea1"
+                                      rows="5"
+                              ></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn">Gửi</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box-sale mb-4">
+                            <div class="sale__body">
+                                <i class="fa fa-gift" aria-hidden="true"></i>
+                                <div class="form-group">
+                                    <input
+                                            type="email"
+                                            class="form-control"
+                                            id="exampleFormControlInput1"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box-cart">
+                            <div class="accordion" id="accordionExample">
+                                <div class="card">
+                                    <div class="card-header" id="headingOne">
+                                        <button
+                                                class="btn"
+                                                type="button"
+                                                data-toggle="collapse"
+                                                data-target="#collapseOne"
+                                                aria-expanded="true"
+                                                aria-controls="collapseOne"
+                                        >
+                                            <div>
+                                                <img src="../images/1__pos/u165.svg" alt=""/>
+                                                <span class="text"> Dùng tại cửa hàng </span>
+                                            </div>
+                                            <div class="plus">
+                                                <i
+                                                        class="fa fa-chevron-down"
+                                                        aria-hidden="true"
+                                                ></i>
+                                            </div>
+
+                                            <div class="minus">
+                                                <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                                            </div>
+                                        </button>
+                                    </div>
+
+                                    <div
+                                            id="collapseOne"
+                                            class="collapse show"
+                                            aria-labelledby="headingOne"
+                                            data-parent="#accordionExample"
+                                    >
+                                        <div class="card-body">
+                                            Some placeholder content for the first accordion
+                                            panel. This panel is shown by default, thanks to the
+                                            <code>.show</code> class.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box-detail my-4">
+                            <a
+                                    class="btn btn-detail"
+                                    data-toggle="collapse"
+                                    href="#multiCollapseExample1"
+                                    role="button"
+                                    aria-expanded="false"
+                                    aria-controls="multiCollapseExample1"
+                            >
+                                <div class="btn-dropdown__top">
+                                    <div class="top__item">X1 Set 3 lẩu</div>
+                                    <div class="top__item">VNĐ 748,000</div>
+                                </div>
+                                <div class="btn-dropdown__bottom">M</div>
+                            </a>
+                            <div class="row">
+                                <div class="col">
+                                    <div
+                                            class="collapse multi-collapse"
+                                            id="multiCollapseExample1"
+                                    >
+                                        <div class="card card-body">
+                                            <div class="dropdown-menu__header">
+                                                X2 Lẩu thái bò
+                                            </div>
+                                            <div class="dropdown-menu__body">
+                                                <div class="body__box">
+                                                    <div class="body__box-item">
+                                                        <p>Số lượng</p>
+                                                        <span>2</span>
+                                                    </div>
+                                                    <div class="body__box-item">
+                                                        <p>Giá</p>
+                                                        <span>768.000</span>
+                                                    </div>
+                                                    <div class="body__box-item">
+                                                        <p>Chiết khấu</p>
+                                                        <span>0.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="dropdown-menu__footer">
+                                                <button
+                                                        type="button"
+                                                        class="btn"
+                                                        data-toggle="modal"
+                                                        data-target="#exampleModalLong"
+                                                >
+                                                    <i class="fa fa-pencil" aria-hidden="true"></i>
+                                                </button>
+
+                                                <!-- Modal -->
+                                                <div
+                                                        class="modal fade"
+                                                        id="exampleModalLong"
+                                                        tabindex="-1"
+                                                        role="dialog"
+                                                        aria-labelledby="exampleModalLongTitle"
+                                                        aria-hidden="true"
+                                                >
+                                                    <div class="modal-dialog" role="document">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <h5
+                                                                        class="modal-title"
+                                                                        id="exampleModalLongTitle"
+                                                                >
+                                                                    Ghi chú
+                                                                </h5>
+                                                                <button
+                                                                        type="button"
+                                                                        class="close"
+                                                                        data-dismiss="modal"
+                                                                        aria-label="Close"
+                                                                >
+                                      <span aria-hidden="true"
+                                      ><i
+                                              class="fa fa-times"
+                                              aria-hidden="true"
+                                      ></i
+                                      ></span>
+                                                                </button>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                <div class="form-group">
+                                      <textarea
+                                              class="form-control"
+                                              placeholder="Nhập ghi chú"
+                                              id="exampleFormControlTextarea1"
+                                              rows="5"
+                                      ></textarea>
+                                                                </div>
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button
+                                                                        type="button"
+                                                                        class="btn  btn-info"
+                                                                >
+                                                                    Gửi
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <button type="button" class="btn "><i class="fa fa-trash-o"
+                                                                                      aria-hidden="true"></i></button>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box-price">
+                            <div class="box-price__body">
+                                <ul class="body__left">
+                                    <li>Tổng tính</li>
+                                    <li>Giảm giá</li>
+                                    <li>Thuế</li>
+                                    <li>Tổng cộng</li>
+                                </ul>
+                                <ul class="body__right">
+                                    <li>VND 1,244,000</li>
+                                    <li>VND 512,000</li>
+                                    <li>VND 0</li>
+                                    <li style="color: #f7781b">VND 713,000</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box__btn mt-4">
+                        <button type="button" class="btn btn-danger">Thanh toán</button>
+                        <button type="button" class="btn btn-danger">Giữ</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div style="height: 100vh"></div>
+<script>
+    $("body").addClass("product-filter-body");
+
+    let search_time_out;
+    $("#search-term").on("keyup", function (e) {
         let term = $(this).val();
         clearTimeout(search_time_out);
         search_time_out = setTimeout(function () {
-          searchHint(term);
+            searchHint(term);
         }, 500);
-      });
+    });
 
-      function searchHint(term) {
+    function searchHint(term) {
         let router = "http://metropole.seawise.vn/product/search-item";
         $.ajax({
-          method: 'get',
-          url: router,
-          data: {
-            name: term,
-          },
+            method: 'get',
+            url: router,
+            data: {
+                name: term,
+            },
         }).done(function (res) {
-          $(".search-result").empty();
-          $.each(res, function (index, value) {
-            console.log(value);
-            if (index < 5) {
-              $(".search-result").append(
-                '<li class="item" onclick="appendSearch(\'' + value.name + "')\">" + value.name +"</li>"
-              );
-            }
-          });
+            $(".search-result").empty();
+            $.each(res, function (index, value) {
+                console.log(value);
+                if (index < 5) {
+                    $(".search-result").append(
+                        '<li class="item" onclick="appendSearch(\'' + value.name + "')\">" + value.name + "</li>"
+                    );
+                }
+            });
         });
-      }
-      function handleOnclick() {
-        let router = "http://metropole.seawise.vn/tim-kiem?name="+$('#search-term').val();
+    }
+
+    function handleOnclick() {
+        let router = "http://metropole.seawise.vn/tim-kiem?name=" + $('#search-term').val();
 
         $.ajax({
             url: router,
@@ -1670,21 +1672,22 @@
                 console.log(res)
             }
         });
-      }
-      function appendSearch(text) {
+    }
+
+    function appendSearch(text) {
         $("#search-term").val(text);
 
         // $('.search-result').empty();
 
         $("#submit-search").trigger("click");
-      }
-    </script>
-    <script src="./../vendor/bootstrap-4.6.1/js/bootstrap.bundle.min.js"></script>
-    <script
-      type="text/javascript"
-      src="./../vendor/slick/slick.min.js"
-    ></script>
+    }
+</script>
+<script src="./../vendor/bootstrap-4.6.1/js/bootstrap.bundle.min.js"></script>
+<script
+        type="text/javascript"
+        src="./../vendor/slick/slick.min.js"
+></script>
 
-    <script src="./../js/main.js"></script>
-  </body>
+<script src="./../js/main.js"></script>
+</body>
 </html>

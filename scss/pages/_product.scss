@@ -1,0 +1,330 @@
+.Product {
+    background-color: $bgTertiary;
+    border-radius: 8px;
+    border: 1px solid $linePrimary;
+    &__header {
+      .nav-tabs {
+        padding-bottom: 1px;
+        border-bottom: 1px solid $contentTertiary;
+        .nav-item {
+          margin-top: 1px;
+  
+          .nav-link {
+            text-decoration: none;
+            border: unset;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            /* identical to box height, or 150% */
+  
+            /* Light/content/Secondary */
+  
+            color: $contentSecondary;
+            padding: 10px 22px;
+  
+            background-color: $bgTertiary;
+            &.active {
+              font-weight: 700;
+              font-size: 16px;
+              line-height: 24px;
+              color: $contentBlue;
+              border-bottom: 2px solid $lineBlue;
+              background-color: $bgTertiary;
+            }
+          }
+        }
+      }
+    }
+    &__body {
+       
+      .ProductockTabContent{
+            &__box {
+                .box {
+                    padding: 0 16px;
+                    &-left {
+                        .modal {
+                            .modal-content {
+                                .modal-header {
+                                    display: flex;
+                                    align-items: center;
+                                    .modal-title {
+                                        color: $contentRed;
+                                    }
+                                }
+                                .modal-body {
+                                    display: flex;
+                                    gap: 30px;
+                                    .image{
+                                        width: 183px;
+                                        height: 120px;
+                                        position: relative;
+                                        border-radius: 16px;
+                                        overflow: hidden;
+                                        img {
+                                            position: absolute;
+                                            top: 0;
+                                            left: 0;
+                                            width: 100%;
+                                            height: 100%;
+                                            object-fit: cover;
+                                            object-position: center;
+                                        }
+                                    }
+                                    .body {
+                                        flex: 1;
+                                        
+                                    }
+                                    form {
+                                        .form-control {
+                                            font-size: 1.6rem;
+                                            width: 100%;
+                                            
+                                        }
+                                        label {
+                                            span {
+                                                color: $contentRed;
+                                            }
+                                        }
+                                        .modal-footer {
+                                            border-top: none;
+                                            .btn {
+                                                font-size: 1.6rem;
+                                                padding: 6px 24px;
+                                                border-radius: 20px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    &-right {
+                        .box {
+                            &__header {
+                                padding: 8px 16px;
+
+                            }
+                            &__body {
+                                .body {
+                                    &__item {
+                                        display: flex;
+                                        gap: 20px;
+                                        padding: 8px;
+                                        border-top: 1px solid $linePrimary;
+                                        &-left {
+                                            text-align: center;
+                                            .image{
+                                                position: relative;
+                                                width:100px;
+                                                height: 75px;
+                                                border-radius: 12px;
+                                                overflow: hidden;
+                                                img {
+                                                    object-fit: cover;
+                                                    object-position: center;
+                                                    position: absolute;
+                                                    top: 0;
+                                                    left: 0;
+                                                    width: 100%;
+                                                    height: 100%;
+                                                }
+                                            }
+                                            .bottom_image {
+                                                margin-top: 8px;
+                                            }
+                                        }
+                                        &-center {
+                                            flex: 2;
+                                            span {
+                                                color: $contentSecondary;
+                                                font-size: 1.4rem;
+                                            }
+                                            .desc {
+                                                font-size: 1.4rem;
+                                                line-height: calc(16/14);
+                                            }
+
+                                        }
+                                        &-right {
+                                            flex: 1;
+                                            i {
+                                                margin-right: 8px;
+                                                font-size: 2rem;
+                                                color: $contentOrange;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+      }
+       .requestedProduct {
+            &__box {
+                .box {
+                    &__header {
+                        &-list {
+                            padding: 16px 8px;
+                            margin-bottom: 0;
+                            list-style: none;
+                            color: $contentPrimary;
+    
+                            font-weight: 600;
+                            line-height: calc(18/16);
+                            font-size: 1.6rem;
+    
+                            display: grid;
+                            grid-template-columns: repeat(6, 1fr);
+                            li{
+                            }
+                        }
+                    }
+                    &__item {
+                        border-top: 1px solid $linePrimary;
+                        &-list {
+                            
+                            padding: 16px 8px;
+                            list-style: none;
+                            display: grid;
+                            margin-bottom: 0;
+                            grid-template-columns: repeat(6, 1fr);
+                            li:nth-child(2) {
+                                .box {
+                                    display: flex;
+                                    align-items: center;
+                                    gap: 10px;
+                                    .avatar {
+                                        position: relative;
+                                        width: 50px;
+                                        height: 50px;
+                                        border-radius: 12px;
+                                        overflow: hidden;
+                                        img {
+                                            position: absolute;
+                                            top: 0;
+                                            left: 0;
+                                            width: 100%;
+                                            height: 100%;
+                                            object-fit: cover;
+                                            object-position: center;
+                                        }
+                                    }
+                                }
+                            }
+                            li:last-child{
+                                display: flex;
+                                align-items: center;
+                                gap: 20px;
+                                i {
+                                    font-size: 2rem;
+                                    color: #419543;
+                                }
+                                .modal {
+                                    .modal-content {
+                                        .modal-header {
+                                            display: flex;
+                                            align-items: center;
+                                            .modal-title {
+                                                color: $contentRed;
+
+                                            }
+                                            i {
+                                                font-size: 2rem;
+                                                color: $bgPrimary;
+                                            }
+                                        }
+                                        .modal-body {
+                                            display: flex;
+                                            align-items: center;
+                                            justify-content: center;
+                                            .box {
+                                                text-align: center;
+                                                padding: 60px;
+                                                i {
+                                                    font-size: 8rem;
+                                                    color: $bgPrimary;
+                                                    margin-bottom: 8px;
+                                                }
+                                                .decoration {
+                                                    color: $contentPrimary;
+                                                    font-size: 1.6rem;
+                                                    line-height: calc(18/16);
+                                                    font-weight: 400;
+                                                }
+                                                &__body {
+                                                    display: flex;
+                                                    align-items: center;
+                                                    justify-content: center;
+                                                    gap: 30px;
+                                                    .btn {
+                                                        font-size: 1.6rem;
+                                                        padding: 6px 24px;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                .btn{
+                                    padding: 0;
+                                    display: flex;
+                                    align-items: center;
+                                    gap: 20px;
+                                    span {
+                                        font-size: 1.6rem;
+                                    }
+                                    i {
+                                        font-size: 2rem;
+                                        color: #0000FF;
+                                    }
+                                }
+                                
+                            }
+                        }
+                    }     
+                }
+            }
+          }
+     
+      .settingContent {
+          margin: 16px;
+          &__box {
+            width: 500px;
+            min-height: 200px;
+            max-width: calc(100% - 32px);
+              border: 1px solid $linePrimary;
+              border-radius: 6px;
+              box-shadow: 0 0 10px $shadow;
+             .box {
+                 &__header {
+                     padding: 16px;
+                     font-size: 1.8rem;
+                     line-height: calc(20/18);
+                     font-weight: 500;
+                     color: $contentPrimary;
+                 }
+                 &__body {
+                     padding: 0 16px;
+                     .form-group {
+                        label {
+                            span {
+                                color: $contentRed;
+                            }
+                        }
+                        .form-control {
+                            font-size: 1.6rem;
+
+                        }
+                    }
+                    .btn {
+                        font-size: 1.6rem;
+                        padding: 6px 24px;
+                    }
+                 }
+             } 
+          }
+      } 
+    }
+  }

@@ -115,3 +115,8 @@ body {
 //     object-position: center;
 //   }
 // }
+button, input[type="button"], input[type="reset"] {
+  outline: none;
+  background-color: transparent;
+  border: none;
+}

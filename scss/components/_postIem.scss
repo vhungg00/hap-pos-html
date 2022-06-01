@@ -335,8 +335,9 @@
     &__box {
         .box-body-search {
             .search-result {
+                margin-bottom: 0;
                 list-style: none;
-                padding: 8px;
+                padding: 0 8px;
                 .item {
                     padding: 8px;
                     font-weight: 500;
@@ -348,17 +349,16 @@
                 }
             }
         }
-        padding: 8px;
         background-color: $bgTertiary;
         box-shadow: 0 2px 4px $shadow;
         .box {
             background-color: $bgTertiary;
-            box-shadow: 0 2px 4px $shadow;
             border-radius: 4px;
             border: 1px solid $linePrimary;
             padding: 8px;
 
             &-search {
+                padding: 8px;
                 display: flex;
                 align-items: center;
                 i {
@@ -441,14 +441,15 @@
                 }
                 .sale__body {
                     background-color: $bgTertiary;
-                    box-shadow: 0 2px 4px $shadow;
                     border-radius: 4px;
                     border: 1px solid $linePrimary;
                     padding: 8px;
                 }
             }
             &-cart {
-                border: 1px solid $linePrimary;
+                border-top: 1px solid $linePrimary;
+                border-bottom: 1px solid $linePrimary;
+
                 border-radius: 4px;
                 .accordion {
                     background: $bgTertiary;
@@ -526,6 +527,8 @@
                 }
             }
             &-detail {
+
+                padding: 8px;
                 .btn-detail {
                     width: 100%;
                     box-shadow: none;
@@ -612,6 +615,7 @@
                 }
             }
             &-price {
+                padding: 8px;
                 &__body {
                     display: flex;
                     align-items: center;
@@ -634,7 +638,8 @@
     }
     .box__btn {
         display: flex;
-        justify-content: space-between;
+        justify-content:center;
+        gap: 10px;
         .btn {
             padding: 1.4rem;
             width: 160px;

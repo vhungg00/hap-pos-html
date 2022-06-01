@@ -4,7 +4,7 @@
     <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Document</title>
+    <title>User</title>
 
     <!-- Bootstrap core CSS -->
     <link
@@ -287,13 +287,15 @@
                                     </div>
                                 </div>
                                 <!-- Modal edit customer -->
-                                <div class="edit-customer modal fade " id="exampleModalLong2" tabindex="-1" role="dialog"
+                                <div class="edit-customer modal fade " id="exampleModalLong2" tabindex="-1"
+                                     role="dialog"
                                      aria-labelledby="exampleModalLongTitle2"
                                      aria-hidden="true">
                                     <div class="modal-dialog" role="document">
                                         <div class="modal-content">
                                             <div class="modal-header">
-                                                <h5 class="modal-title" id="exampleModalLongTitle2">Sửa thông tin khách hàng </h5>
+                                                <h5 class="modal-title" id="exampleModalLongTitle2">Sửa thông tin khách
+                                                    hàng </h5>
 
                                                 <button type="button" class="close" data-dismiss="modal"
                                                         aria-label="Close">
@@ -409,10 +411,12 @@
                                         <li>10,000,000</li>
                                         <li>Hoạt động</li>
                                         <li>
-                                            <button type="button" class="btn "onclick="editCustomer(1)" ><i class="fa fa-pencil"
-                                                                                  aria-hidden="true"></i></button>
-                                            <button type="button" class="btn " onclick="removeCustomer(1)"><i class="fa fa-trash-o"
-                                                                                  aria-hidden="true"></i></button>
+                                            <button type="button" class="btn " onclick="editCustomer(1)"><i
+                                                    class="fa fa-pencil"
+                                                    aria-hidden="true"></i></button>
+                                            <button type="button" class="btn " onclick="removeCustomer(1)"><i
+                                                    class="fa fa-trash-o"
+                                                    aria-hidden="true"></i></button>
                                         </li>
                                     </div>
                                 </div>
@@ -435,7 +439,7 @@
 <script>
     $(document).on('submit', '#add-customer', (e) => {
         e.preventDefault();
-        var count = ($('.body__box-item').length)+1 ;
+        var count = ($('.body__box-item').length) + 1;
         var status = $('#status').is(":checked") ? 'Hoạt động' : 'Ngưng hoạt động'
         var html = ` <div class="body__box-item item_${count}">
                                     <div class="box-item__list">
@@ -458,15 +462,19 @@
         $(".body__box").append(html);
         $('.add-customer').modal('hide')
     });
-    function removeCustomer (id) {
-        if(confirm("Bạn có chắc chắn muốn xóa!")){
+
+    function removeCustomer(id) {
+        if (confirm("Bạn có chắc chắn muốn xóa!")) {
             console.log(id)
-            $(".item_"+id).remove();
+            $(".item_" + id).remove();
         }
     }
-    function editCustomer (id) {
-        $('.edit-customer').modal('show')
+
+    function editCustomer(id) {
+        // todo ajax => get data
         $('#edit_name').val('Hùng đần');
+        $('.edit-customer').modal('show')
+
     }
 </script>
 </body>

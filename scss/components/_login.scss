@@ -1,0 +1,115 @@
+.pos__container {
+  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    90deg,
+    #ffa68d 0,
+    #ff8276 25%,
+    #fc6765 50%,
+    #db324d
+  );
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  .container__footer,
+  .container__header {
+    color: $contentInversePrimary;
+    padding: 15px 15px 0;
+    font-size: 2rem;
+    height: 100px;
+    overflow-y: auto;
+    font-weight: 400;
+    line-height: calc(30 / 25);
+  }
+  .pos__content {
+    background-color: #fff;
+    width: 550px;
+    min-height: 200px;
+    position: relative;
+    max-width: calc(100% - 32px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+    .content__body {
+      padding: 10px 80px;
+      .body__logo {
+        position: absolute;
+        top: -50px;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 50%;
+        overflow: hidden;
+        border: 3px solid $lineLight;
+        width: 100px;
+        height: 100px;
+        box-shadow: 3px -3px 4px $shadow;
+        img {
+          object-fit: cover;
+          width: 100%;
+          height: 100%;
+        }
+      }
+      form {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+        .form__header {
+          margin-top: 60px;
+          color: $contentPrimary;
+          text-transform: uppercase;
+          text-align: center;
+          font-size: 1.8rem;
+          overflow-y: auto;
+          font-weight: 500;
+          line-height: calc(23/20);
+        }
+        .form-group {
+            label {
+                font-size: 1.6rem;
+                font-weight: 500;
+                color: $contentPrimary;
+                line-height: calc(18/16);
+                span {
+                    color:$contentRed;
+                }
+            }
+            .form-control {
+                font-size: 1.6rem;
+                caret-color: $contentRed;
+            }
+        }
+        .form-check {
+            padding-left: 0;
+            .form-check-label {
+                margin-left: 30px;
+            }
+        }
+        .btn {
+            text-align: center;
+            font-size: 1.6rem;
+            padding: 6px 24px;
+            color: $contentInversePrimary;
+            box-shadow: 2px 4px 5px $shadow;
+            margin: 15px 0 30px 0;
+        }
+      }
+    }
+}
+.container__footer {
+  font-size: 2rem;
+}
+}
+
+@media screen and (max-width: 768px) {
+  .pos__container {
+    .pos__content {
+      .content__body {
+          padding: 10px 20px;
+      }
+    }
+  }
+}

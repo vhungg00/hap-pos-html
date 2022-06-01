@@ -1,0 +1,60 @@
+.StartPopup {
+    &__box {
+        display: flex;
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 30%);
+        align-items: center;
+        justify-content: center;
+        .PopUp {
+            &__container {
+                width: 500px;
+                max-width: calc(100% - 32px);
+                box-shadow: 0 0 10px $shadow;
+                min-height: 200px;
+                position: relative;
+                background: $bgTertiary;
+                border-radius: 4px;
+                .container {
+                    &__header {
+                        border-bottom: 1px solid $linePrimary;
+                        span {
+                            display: block;
+                            padding: 16px 8px;
+                            color: $contentPrimary;
+                            font-weight: 500;
+                            font-size: 1.6rem;
+                            line-height: calc(18/16);
+                        }
+                    }
+                    &__body {
+                        padding: 16px;
+                        .input-group{
+                            display: flex;
+                            flex-direction: column;
+                            .input-group-prepend {
+                                .input-group-text{
+                                    padding: 0 16px;
+                                    font-size: 1.6rem;
+                                }
+                                .form-control {
+                                    font-size: 1.6rem;
+                                    border-left: none;
+                                }
+                            }
+                        }
+                        .box {
+                            .btn {
+                                font-size: 1.6rem;
+                                padding: 6px 24px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

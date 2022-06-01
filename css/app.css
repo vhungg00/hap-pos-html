@@ -2167,19 +2167,19 @@ button, input[type=button], input[type=reset] {
   font-weight: 600;
   color: #030303;
 }
-.Sales {
+.SalesItem {
   background-color: white;
   border-radius: 8px;
   border: 1px solid #f2f2f2;
 }
-.Sales__header .nav-tabs {
+.SalesItem__header .nav-tabs {
   padding-bottom: 1px;
   border-bottom: 1px solid #dedede;
 }
-.Sales__header .nav-tabs .nav-item {
+.SalesItem__header .nav-tabs .nav-item {
   margin-top: 1px;
 }
-.Sales__header .nav-tabs .nav-item .nav-link {
+.SalesItem__header .nav-tabs .nav-item .nav-link {
   text-decoration: none;
   border: unset;
   font-weight: 500;
@@ -2191,7 +2191,7 @@ button, input[type=button], input[type=reset] {
   padding: 10px 22px;
   background-color: white;
 }
-.Sales__header .nav-tabs .nav-item .nav-link.active {
+.SalesItem__header .nav-tabs .nav-item .nav-link.active {
   font-weight: 700;
   font-size: 16px;
   line-height: 24px;
@@ -2199,7 +2199,7 @@ button, input[type=button], input[type=reset] {
   border-bottom: 2px solid #000080;
   background-color: white;
 }
-.Sales__body .waitPayTabContent__box .box__header-list {
+.SalesItem__body .waitPayTabContent__box .box__header-list {
   padding: 16px 8px;
   margin-bottom: 0;
   list-style: none;
@@ -2210,29 +2210,29 @@ button, input[type=button], input[type=reset] {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
 }
-.Sales__body .waitPayTabContent__box .box__item {
+.SalesItem__body .waitPayTabContent__box .box__item {
   border-top: 1px solid #f2f2f2;
 }
-.Sales__body .waitPayTabContent__box .box__item-list {
+.SalesItem__body .waitPayTabContent__box .box__item-list {
   padding: 16px 8px;
   list-style: none;
   display: grid;
   margin-bottom: 0;
   grid-template-columns: repeat(6, 1fr);
 }
-.Sales__body .waitPayTabContent__box .box__item-list li:last-child {
+.SalesItem__body .waitPayTabContent__box .box__item-list li:last-child {
   display: flex;
   align-items: center;
   gap: 20px;
 }
-.Sales__body .waitPayTabContent__box .box__item-list li:last-child i {
+.SalesItem__body .waitPayTabContent__box .box__item-list li:last-child i {
   font-size: 2rem;
   color: #F7781B;
 }
-.Sales__body .CommentTabContent {
+.SalesItem__body .CommentTabContent {
   padding: 16px 24px;
 }
-.Sales__body .CommentTabContent__label {
+.SalesItem__body .CommentTabContent__label {
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -2241,24 +2241,24 @@ button, input[type=button], input[type=reset] {
   /* Light/content/Primary */
   color: #030303;
 }
-.Sales__body .CommentTabContent__totalRate {
+.SalesItem__body .CommentTabContent__totalRate {
   display: flex;
   margin-top: 18px;
   align-items: center;
   flex-wrap: wrap;
 }
-.Sales__body .CommentTabContent__totalRate-item {
+.SalesItem__body .CommentTabContent__totalRate-item {
   margin-right: 4px;
   display: flex;
   align-items: center;
 }
-.Sales__body .CommentTabContent__totalRate-item:nth-child(5) {
+.SalesItem__body .CommentTabContent__totalRate-item:nth-child(5) {
   margin-right: 8px;
 }
-.Sales__body .CommentTabContent__totalRate-item.active svg path {
+.SalesItem__body .CommentTabContent__totalRate-item.active svg path {
   fill: #ffce39;
 }
-.Sales__body .CommentTabContent__totalRate-text {
+.SalesItem__body .CommentTabContent__totalRate-text {
   display: flex;
   align-items: center;
   font-weight: 700;
@@ -2266,11 +2266,11 @@ button, input[type=button], input[type=reset] {
   line-height: 24px;
   color: #777777;
 }
-.Sales__body .CommentTabContent__statistical {
+.SalesItem__body .CommentTabContent__statistical {
   display: flex;
   flex-wrap: wrap;
 }
-.Sales__body .CommentTabContent__statistical-item {
+.SalesItem__body .CommentTabContent__statistical-item {
   display: flex;
   align-items: center;
   background: rgba(20, 33, 65, 0.06);
@@ -2278,15 +2278,15 @@ button, input[type=button], input[type=reset] {
   padding: 8px;
   margin-top: 12px;
 }
-.Sales__body .CommentTabContent__statistical-item:not(:last-child) {
+.SalesItem__body .CommentTabContent__statistical-item:not(:last-child) {
   margin-right: 12px;
 }
-.Sales__body .CommentTabContent__statistical-item .icon {
+.SalesItem__body .CommentTabContent__statistical-item .icon {
   display: flex;
   align-items: center;
   margin-right: 4px;
 }
-.Sales__body .CommentTabContent__statistical-item .text {
+.SalesItem__body .CommentTabContent__statistical-item .text {
   font-weight: 500;
   font-size: 12px;
   line-height: 16px;
@@ -2297,12 +2297,12 @@ button, input[type=button], input[type=reset] {
   align-items: center;
   transform: translateY(2px);
 }
-.Sales__body .CommentTabContent__body {
+.SalesItem__body .CommentTabContent__body {
   margin-top: 16px;
   /* Light/content/Tertiary */
   border-bottom: 1px solid #dedede;
 }
-.Sales__body .CommentTabContent__showmore a {
+.SalesItem__body .CommentTabContent__showmore a {
   text-decoration: none;
   margin-top: 12px;
   font-style: normal;
@@ -2313,24 +2313,24 @@ button, input[type=button], input[type=reset] {
   /* Light / Funtion / Brand */
   color: #da2127;
 }
-.Sales__body .CommentTabContent__showmore a:hover {
+.SalesItem__body .CommentTabContent__showmore a:hover {
   opacity: 0.8;
 }
-.Sales__body .CommentTabContent .ReviewForm {
+.SalesItem__body .CommentTabContent .ReviewForm {
   padding: 16px 0 16px 0;
 }
-.Sales__body .FaqTabContent {
+.SalesItem__body .FaqTabContent {
   padding: 16px 24px;
 }
-.Sales__body .FaqTabContent .question__box {
+.SalesItem__body .FaqTabContent .question__box {
   background: #F7781B;
   padding: 20px 0;
 }
-.Sales__body .FaqTabContent .question__box .card-header {
+.SalesItem__body .FaqTabContent .question__box .card-header {
   padding-left: 0;
   padding-right: 0;
 }
-.Sales__body .FaqTabContent .question__box .card-header button {
+.SalesItem__body .FaqTabContent .question__box .card-header button {
   padding-left: 0;
   padding-right: 0;
 }

@@ -1464,6 +1464,66 @@ button, input[type=button], input[type=reset] {
   height: 40px;
 }
 
+.CustomTapContent .modal .modal-content .modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.CustomTapContent .modal .modal-content .modal-header .modal-title {
+  font-size: 1.6rem;
+}
+.CustomTapContent .modal .modal-content .modal-body .box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.CustomTapContent .modal .modal-content .modal-body .box__image-left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.CustomTapContent .modal .modal-content .modal-body .box__image-left .header {
+  font-weight: 500;
+}
+.CustomTapContent .modal .modal-content .modal-body .box__image-left div {
+  display: flex;
+  gap: 10px;
+}
+.CustomTapContent .modal .modal-content .modal-body .box__image-left div span {
+  padding: 6px 16px;
+  display: block;
+  border: 1px solid #F70121;
+  border-radius: 8px;
+  color: #777777;
+  font-weight: 600;
+  cursor: pointer;
+}
+.CustomTapContent .modal .modal-content .modal-body .box__image-left div span:hover {
+  opacity: 0.6;
+}
+.CustomTapContent .modal .modal-content .modal-body .box__image-left div .active {
+  background: #F70121;
+  color: #ffffff;
+}
+.CustomTapContent .modal .modal-content .modal-body .box__image-right {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.CustomTapContent .modal .modal-content .modal-body .box__image-right .header {
+  font-weight: 500;
+}
+.CustomTapContent .modal .modal-content .modal-body .box__image-right div span {
+  color: #F70121;
+  font-weight: 500;
+}
+.CustomTapContent .modal .modal-content .modal-footer .btn {
+  background-color: #F70121;
+  font-weight: 500;
+  font-size: 1.6rem;
+  color: #ffffff;
+  border-radius: 200px;
+  padding: 6px 16px;
+}
 .CustomTapContent__box .nav {
   gap: 10px;
 }
@@ -1502,66 +1562,6 @@ button, input[type=button], input[type=reset] {
   font-size: 2rem;
   background-color: transparent;
   border: none;
-}
-.CustomTapContent__box .tab-content .PosItem2__box .box__image .modal .modal-content .modal-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.CustomTapContent__box .tab-content .PosItem2__box .box__image .modal .modal-content .modal-header .modal-title {
-  font-size: 1.6rem;
-}
-.CustomTapContent__box .tab-content .PosItem2__box .box__image .modal .modal-content .modal-body .box {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-}
-.CustomTapContent__box .tab-content .PosItem2__box .box__image .modal .modal-content .modal-body .box__image-left {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-.CustomTapContent__box .tab-content .PosItem2__box .box__image .modal .modal-content .modal-body .box__image-left .header {
-  font-weight: 500;
-}
-.CustomTapContent__box .tab-content .PosItem2__box .box__image .modal .modal-content .modal-body .box__image-left div {
-  display: flex;
-  gap: 10px;
-}
-.CustomTapContent__box .tab-content .PosItem2__box .box__image .modal .modal-content .modal-body .box__image-left div span {
-  padding: 6px 16px;
-  display: block;
-  border: 1px solid #F70121;
-  border-radius: 8px;
-  color: #777777;
-  font-weight: 600;
-  cursor: pointer;
-}
-.CustomTapContent__box .tab-content .PosItem2__box .box__image .modal .modal-content .modal-body .box__image-left div span:hover {
-  opacity: 0.6;
-}
-.CustomTapContent__box .tab-content .PosItem2__box .box__image .modal .modal-content .modal-body .box__image-left div .active {
-  background: #F70121;
-  color: #ffffff;
-}
-.CustomTapContent__box .tab-content .PosItem2__box .box__image .modal .modal-content .modal-body .box__image-right {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-}
-.CustomTapContent__box .tab-content .PosItem2__box .box__image .modal .modal-content .modal-body .box__image-right .header {
-  font-weight: 500;
-}
-.CustomTapContent__box .tab-content .PosItem2__box .box__image .modal .modal-content .modal-body .box__image-right div span {
-  color: #F70121;
-  font-weight: 500;
-}
-.CustomTapContent__box .tab-content .PosItem2__box .box__image .modal .modal-content .modal-footer .btn {
-  background-color: #F70121;
-  font-weight: 500;
-  font-size: 1.6rem;
-  color: #ffffff;
-  border-radius: 200px;
-  padding: 6px 16px;
 }
 .CustomTapContent__box .tab-content .PosItem2__box .box__body {
   width: 100%;

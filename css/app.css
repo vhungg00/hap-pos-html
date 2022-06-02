@@ -2908,4 +2908,174 @@ button, input[type=button], input[type=reset] {
   padding: 6px 24px;
 }
 
+.SettingsItem {
+  background-color: white;
+  border-radius: 8px;
+  border: 1px solid #f2f2f2;
+  height: 50vh;
+  position: relative;
+}
+.SettingsItem__header .nav-tabs {
+  padding-bottom: 1px;
+  border-bottom: 1px solid #dedede;
+}
+.SettingsItem__header .nav-tabs .nav-item {
+  margin-top: 1px;
+}
+.SettingsItem__header .nav-tabs .nav-item .nav-link {
+  text-decoration: none;
+  border: unset;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+  /* Light/content/Secondary */
+  color: #777777;
+  padding: 10px 22px;
+  background-color: white;
+}
+.SettingsItem__header .nav-tabs .nav-item .nav-link.active {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000080;
+  border-bottom: 2px solid #000080;
+  background-color: white;
+}
+.SettingsItem__body .discountTabContent__box .box .discountPlust {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+}
+.SettingsItem__body .discountTabContent__box .box .discountPlust .btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: none;
+}
+.SettingsItem__body .discountTabContent__box .box .discountPlust div {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2.4px solid #F7781B;
+}
+.SettingsItem__body .discountTabContent__box .box .discountPlust div i {
+  font-size: 2rem;
+  color: #F7781B;
+}
+.SettingsItem__body .discountTabContent__box .box .discountPlust span {
+  font-size: 1.6rem;
+  color: #F7781B;
+  font-weight: 600;
+  line-height: 1.125;
+}
+.SettingsItem__body .CommentTabContent {
+  padding: 16px 24px;
+}
+.SettingsItem__body .CommentTabContent__label {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  /* identical to box height, or 143% */
+  /* Light/content/Primary */
+  color: #030303;
+}
+.SettingsItem__body .CommentTabContent__totalRate {
+  display: flex;
+  margin-top: 18px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.SettingsItem__body .CommentTabContent__totalRate-item {
+  margin-right: 4px;
+  display: flex;
+  align-items: center;
+}
+.SettingsItem__body .CommentTabContent__totalRate-item:nth-child(5) {
+  margin-right: 8px;
+}
+.SettingsItem__body .CommentTabContent__totalRate-item.active svg path {
+  fill: #ffce39;
+}
+.SettingsItem__body .CommentTabContent__totalRate-text {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #777777;
+}
+.SettingsItem__body .CommentTabContent__statistical {
+  display: flex;
+  flex-wrap: wrap;
+}
+.SettingsItem__body .CommentTabContent__statistical-item {
+  display: flex;
+  align-items: center;
+  background: rgba(20, 33, 65, 0.06);
+  border-radius: 12px;
+  padding: 8px;
+  margin-top: 12px;
+}
+.SettingsItem__body .CommentTabContent__statistical-item:not(:last-child) {
+  margin-right: 12px;
+}
+.SettingsItem__body .CommentTabContent__statistical-item .icon {
+  display: flex;
+  align-items: center;
+  margin-right: 4px;
+}
+.SettingsItem__body .CommentTabContent__statistical-item .text {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  /* identical to box height, or 133% */
+  /* Light/content/Secondary */
+  color: #777777;
+  display: flex;
+  align-items: center;
+  transform: translateY(2px);
+}
+.SettingsItem__body .CommentTabContent__body {
+  margin-top: 16px;
+  /* Light/content/Tertiary */
+  border-bottom: 1px solid #dedede;
+}
+.SettingsItem__body .CommentTabContent__showmore a {
+  text-decoration: none;
+  margin-top: 12px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  /* identical to box height, or 143% */
+  /* Light / Funtion / Brand */
+  color: #da2127;
+}
+.SettingsItem__body .CommentTabContent__showmore a:hover {
+  opacity: 0.8;
+}
+.SettingsItem__body .CommentTabContent .ReviewForm {
+  padding: 16px 0 16px 0;
+}
+.SettingsItem__body .FaqTabContent {
+  padding: 16px 24px;
+}
+.SettingsItem__body .FaqTabContent .question__box {
+  background: #F7781B;
+  padding: 20px 0;
+}
+.SettingsItem__body .FaqTabContent .question__box .card-header {
+  padding-left: 0;
+  padding-right: 0;
+}
+.SettingsItem__body .FaqTabContent .question__box .card-header button {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 /*# sourceMappingURL=app.css.map */

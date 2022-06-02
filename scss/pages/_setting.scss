@@ -1,0 +1,204 @@
+.SettingsItem {
+    background-color: $bgTertiary;
+    border-radius: 8px;
+    border: 1px solid $linePrimary;
+    height: 50vh;
+    position: relative;
+
+    &__header {
+      .nav-tabs {
+        padding-bottom: 1px;
+        border-bottom: 1px solid $contentTertiary;
+        .nav-item {
+          margin-top: 1px;
+  
+          .nav-link {
+            text-decoration: none;
+            border: unset;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            /* identical to box height, or 150% */
+  
+            /* Light/content/Secondary */
+  
+            color: $contentSecondary;
+            padding: 10px 22px;
+  
+            background-color: $bgTertiary;
+            &.active {
+              font-weight: 700;
+              font-size: 16px;
+              line-height: 24px;
+              color: $contentBlue;
+              border-bottom: 2px solid $lineBlue;
+              background-color: $bgTertiary;
+            }
+          }
+        }
+      }
+    }
+    &__body {
+      .discountTabContent {
+            &__box {
+                .box {
+                    .discountPlust {
+                        position: absolute;
+                        bottom: 30px;
+                        right: 30px;
+                        .btn {
+                            display: flex;
+                            align-items: center;
+                            gap: 8px;
+                            box-shadow: none;
+                        }
+                        div {
+                            width: 40px;
+                            height: 40px;
+                            border-radius: 50%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            border: 2.4px solid $bgPrimary;
+                            i{
+                                font-size: 2rem;
+                                color: $contentOrange;
+
+                            }
+                        }
+                        span {
+                            font-size: 1.6rem;
+                            color: $contentOrange;
+                            font-weight: 600;
+                            line-height: calc(18/16);
+                        }
+                    }
+                }
+            }
+      }
+  
+      .CommentTabContent {
+        padding: 16px 24px;
+  
+        &__label {
+          font-style: normal;
+          font-weight: 700;
+          font-size: 14px;
+          line-height: 20px;
+          /* identical to box height, or 143% */
+  
+          /* Light/content/Primary */
+          color: $contentPrimary;
+        }
+        &__totalRate {
+          display: flex;
+          margin-top: 18px;
+          align-items: center;
+          flex-wrap: wrap;
+          &-item {
+            margin-right: 4px;
+  
+            display: flex;
+            align-items: center;
+            &:nth-child(5) {
+              margin-right: 8px;
+            }
+  
+            &.active {
+              svg path {
+                fill: #ffce39;
+              }
+            }
+          }
+          &-text {
+            display: flex;
+            align-items: center;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 24px;
+            color: $contentSecondary;
+          }
+        }
+        &__statistical {
+          display: flex;
+          flex-wrap: wrap;
+          &-item {
+            display: flex;
+            align-items: center;
+            background: $bgSecondary;
+            border-radius: 12px;
+            padding: 8px;
+            margin-top: 12px;
+            &:not(:last-child) {
+              margin-right: 12px;
+            }
+            .icon {
+              display: flex;
+              align-items: center;
+              margin-right: 4px;
+            }
+            .text {
+              font-weight: 500;
+              font-size: 12px;
+              line-height: 16px;
+              /* identical to box height, or 133% */
+  
+              /* Light/content/Secondary */
+  
+              color: $contentSecondary;
+              display: flex;
+              align-items: center;
+              transform: translateY(2px);
+            }
+          }
+        }
+        &__body {
+          margin-top: 16px;
+          /* Light/content/Tertiary */
+  
+          border-bottom: 1px solid $contentTertiary;
+        }
+        &__showmore {
+          a {
+            text-decoration: none;
+            margin-top: 12px;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 20px;
+            /* identical to box height, or 143% */
+  
+            /* Light / Funtion / Brand */
+  
+            color: $Brainning;
+            &:hover {
+              opacity: 0.8;
+            }
+          }
+        }
+        .ReviewForm {
+          padding: 16px 0 16px 0;
+        }
+      }
+      .FaqTabContent {
+        padding: 16px 24px;
+        .question {
+          &__box {
+            background: $bgPrimary;
+            padding: 20px 0;
+  
+            .card-header {
+              padding-left: 0;
+              padding-right: 0;
+              button {
+                padding-left: 0;
+                padding-right: 0;
+              }
+            }
+            .card-body {
+            }
+          }
+        }
+      }
+    }
+  }

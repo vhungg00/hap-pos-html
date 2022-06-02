@@ -2931,6 +2931,44 @@ button, input[type=button], input[type=reset] {
 .text-checkbox{
   margin-left: 5%;
 }
+.detail-receipt .PosItem4__box{
+  box-shadow: none;
+}
+.detail-receipt .btn-dropdown__top , .fw-100{
+  font-weight: 100 !important;
+
+}
+.modal-detail-receipt .modal-body .checkbox{
+  padding-left: 5%;
+}
+.modal-detail-receipt{
+  width: 150%;
+}
+.btn-receipt{
+  padding-right: 2%;
+}
+.close_shop  {
+  grid-template-columns: repeat(5, 1fr)!important;
+}
+.close_shop li i {
+  font-size: 30px;
+  font-weight: bold;
+}
+.fw-100 .input{
+  border: none;
+  border-bottom: 1px solid;
+}
+.fw-100 input{
+  border: none;
+  outline: none;
+}
+.fw-100 input:disabled{
+  background-color: #fff;
+}
+
+
+
+
  /* sale */
  .users_cart{
   /* background: #F7781B; */

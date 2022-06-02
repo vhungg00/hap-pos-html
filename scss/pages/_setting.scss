@@ -1,14 +1,13 @@
+
+
 .SettingsItem {
     background-color: $bgTertiary;
     border-radius: 8px;
-    border: 1px solid $linePrimary;
-    height: 50vh;
     position: relative;
 
     &__header {
       .nav-tabs {
         padding-bottom: 1px;
-        border-bottom: 1px solid $contentTertiary;
         .nav-item {
           margin-top: 1px;
   
@@ -40,6 +39,7 @@
     }
     &__body {
       .discountTabContent {
+        padding: 1rem 0;
             &__box {
                 .box {
                     .discountPlust {
@@ -73,129 +73,162 @@
                             line-height: calc(18/16);
                         }
                     }
+                    .settingItem {
+                      &__box {
+                        border: 1px solid $linePrimary;
+                        box-shadow: 0 2px 4px $shadow;
+                        width: 100%;
+                        min-height: 150px;
+                        border-radius: 4px;
+                        .box {
+                          &-header {
+                            div {
+                              font-size: 2rem;
+                              font-weight: 500;
+                              color: $contentPrimary;
+                              text-transform: uppercase;
+                            }
+                            padding: 0.8rem;
+                            display: flex;
+                            justify-content: space-between;
+                            button {
+                              box-shadow: none;
+                              i {
+                                font-size: 2rem;
+                                color: $contentOrange;
+                              }
+                            }
+                          }
+                          &-body {
+                            padding: 0 0.8rem;
+                            h3 {
+                              color: $contentOrange;
+                            }
+                            p {
+                              color: $contentPrimary;
+                              font-weight: 500;
+                            }
+                          }
+                        }
+                      }
+                    }
                 }
             }
       }
   
-      .CommentTabContent {
-        padding: 16px 24px;
-  
-        &__label {
-          font-style: normal;
-          font-weight: 700;
-          font-size: 14px;
-          line-height: 20px;
-          /* identical to box height, or 143% */
-  
-          /* Light/content/Primary */
-          color: $contentPrimary;
-        }
-        &__totalRate {
-          display: flex;
-          margin-top: 18px;
-          align-items: center;
-          flex-wrap: wrap;
-          &-item {
-            margin-right: 4px;
-  
-            display: flex;
-            align-items: center;
-            &:nth-child(5) {
-              margin-right: 8px;
-            }
-  
-            &.active {
-              svg path {
-                fill: #ffce39;
+      .settingBasicContent {
+        &__box {
+          .settingBasicItem {
+            &__box{
+              width: 100%;
+              border: 1px solid $linePrimary;
+              box-shadow: 0 2px 4px $shadow;
+              border-radius: 4px;
+              min-height: 150px;
+              .box {
+                &-header {
+                  padding: 8px 16px;
+                  font-size: 1.6rem;
+                  color: $contentPrimary;
+                  font-weight: 500;
+                  line-height: calc(18/16);
+                }
+                .form-group {
+                  padding: 0 16px;
+                  .form-control {
+                    font-size: 1.6rem;
+                    color: $contentSecondary;
+                  }
+                }
               }
             }
+            
           }
-          &-text {
-            display: flex;
-            align-items: center;
-            font-weight: 700;
-            font-size: 16px;
-            line-height: 24px;
-            color: $contentSecondary;
-          }
-        }
-        &__statistical {
-          display: flex;
-          flex-wrap: wrap;
-          &-item {
-            display: flex;
-            align-items: center;
-            background: $bgSecondary;
-            border-radius: 12px;
-            padding: 8px;
-            margin-top: 12px;
-            &:not(:last-child) {
-              margin-right: 12px;
-            }
-            .icon {
-              display: flex;
-              align-items: center;
-              margin-right: 4px;
-            }
-            .text {
-              font-weight: 500;
-              font-size: 12px;
-              line-height: 16px;
-              /* identical to box height, or 133% */
-  
-              /* Light/content/Secondary */
-  
-              color: $contentSecondary;
-              display: flex;
-              align-items: center;
-              transform: translateY(2px);
-            }
-          }
-        }
-        &__body {
-          margin-top: 16px;
-          /* Light/content/Tertiary */
-  
-          border-bottom: 1px solid $contentTertiary;
-        }
-        &__showmore {
-          a {
-            text-decoration: none;
-            margin-top: 12px;
-            font-style: normal;
-            font-weight: 500;
-            font-size: 14px;
-            line-height: 20px;
-            /* identical to box height, or 143% */
-  
-            /* Light / Funtion / Brand */
-  
-            color: $Brainning;
-            &:hover {
-              opacity: 0.8;
-            }
-          }
-        }
-        .ReviewForm {
-          padding: 16px 0 16px 0;
         }
       }
-      .FaqTabContent {
-        padding: 16px 24px;
-        .question {
-          &__box {
-            background: $bgPrimary;
-            padding: 20px 0;
-  
-            .card-header {
-              padding-left: 0;
-              padding-right: 0;
-              button {
-                padding-left: 0;
-                padding-right: 0;
+      .profileSetting {
+        &__box {
+          width: 600px;
+          max-width: calc(100% - 32px);
+          min-height: 300px;
+          border: 1px solid $linePrimary;
+          box-shadow: 0 2px 4px $shadow;
+          border-radius: 8px;
+          .box{
+            &__header{
+              font-size: 2rem;
+              line-height: calc(24/20);
+              font-weight: 500;
+              color: $contentPrimary;
+              padding: 16px;
+              border-bottom: 1px solid $linePrimary;
+            }
+            form {
+              padding: 16px;
+              .form-group {
+                label {
+                  span {
+                    color: $contentRed;
+                  }
+                }
+                .form-control {
+                  font-size: 1.6rem;
+                }
               }
             }
-            .card-body {
+          }
+        }
+      }
+    }
+    .modal {
+      .modal-content {
+        .modal-header {
+          display: flex;
+          align-items: center; 
+          .modal-title {
+            font-size: 2rem;
+            color: $contentOrange;
+            line-height: calc(24/20);
+            font-weight: 500;
+          }
+          i {
+            font-size: 2rem;
+            color: $contentOrange;
+          }
+        }
+        .modal-body {
+          padding: 1.6rem;
+          form {
+            label {
+              font-size: 1.6rem;
+              color: $contentPrimary;
+              font-weight: 500;
+              span {
+                color: $contentRed;
+              }
+            }
+            .form-group {
+              .form-control {
+                font-size: 1.6rem;
+              }
+            }
+            .input-group {
+              .form-control {
+                font-size: 1.6rem;
+              }
+              .input-group-text {
+                background-color: transparent;
+                padding: 0 16px;
+                font-size: 1.6rem;
+              }
+            }
+            .box {
+              text-align: center;
+              .btn {
+                font-size: 1.6rem;
+                font-weight: 400;
+                padding: 6px 24px;
+              }
             }
           }
         }

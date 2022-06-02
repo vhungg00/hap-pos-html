@@ -1,7 +1,6 @@
 .Product {
     background-color: $bgTertiary;
     border-radius: 8px;
-    border: 1px solid $linePrimary;
     &__header {
       .nav-tabs {
         padding-bottom: 1px;
@@ -40,7 +39,7 @@
       .ProductockTabContent{
             &__box {
                 .box {
-                    padding: 0 16px;
+                    padding: 16px 0;
                     &-left {
                         .modal {
                             .modal-content {
@@ -100,6 +99,8 @@
                     }
                     &-right {
                         .box {
+                            border: 1px solid $linePrimary;
+                            border-radius: 8px;
                             &__header {
                                 padding: 8px 16px;
 

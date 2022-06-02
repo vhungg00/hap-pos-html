@@ -1,0 +1,237 @@
+
+
+.SettingsItem {
+    background-color: $bgTertiary;
+    border-radius: 8px;
+    position: relative;
+
+    &__header {
+      .nav-tabs {
+        padding-bottom: 1px;
+        .nav-item {
+          margin-top: 1px;
+  
+          .nav-link {
+            text-decoration: none;
+            border: unset;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            /* identical to box height, or 150% */
+  
+            /* Light/content/Secondary */
+  
+            color: $contentSecondary;
+            padding: 10px 22px;
+  
+            background-color: $bgTertiary;
+            &.active {
+              font-weight: 700;
+              font-size: 16px;
+              line-height: 24px;
+              color: $contentBlue;
+              border-bottom: 2px solid $lineBlue;
+              background-color: $bgTertiary;
+            }
+          }
+        }
+      }
+    }
+    &__body {
+      .discountTabContent {
+        padding: 1rem 0;
+            &__box {
+                .box {
+                    .discountPlust {
+                        position: absolute;
+                        bottom: 30px;
+                        right: 30px;
+                        .btn {
+                            display: flex;
+                            align-items: center;
+                            gap: 8px;
+                            box-shadow: none;
+                        }
+                        div {
+                            width: 40px;
+                            height: 40px;
+                            border-radius: 50%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            border: 2.4px solid $bgPrimary;
+                            i{
+                                font-size: 2rem;
+                                color: $contentOrange;
+
+                            }
+                        }
+                        span {
+                            font-size: 1.6rem;
+                            color: $contentOrange;
+                            font-weight: 600;
+                            line-height: calc(18/16);
+                        }
+                    }
+                    .settingItem {
+                      &__box {
+                        border: 1px solid $linePrimary;
+                        box-shadow: 0 2px 4px $shadow;
+                        width: 100%;
+                        min-height: 150px;
+                        border-radius: 4px;
+                        .box {
+                          &-header {
+                            div {
+                              font-size: 2rem;
+                              font-weight: 500;
+                              color: $contentPrimary;
+                              text-transform: uppercase;
+                            }
+                            padding: 0.8rem;
+                            display: flex;
+                            justify-content: space-between;
+                            button {
+                              box-shadow: none;
+                              i {
+                                font-size: 2rem;
+                                color: $contentOrange;
+                              }
+                            }
+                          }
+                          &-body {
+                            padding: 0 0.8rem;
+                            h3 {
+                              color: $contentOrange;
+                            }
+                            p {
+                              color: $contentPrimary;
+                              font-weight: 500;
+                            }
+                          }
+                        }
+                      }
+                    }
+                }
+            }
+      }
+  
+      .settingBasicContent {
+        &__box {
+          .settingBasicItem {
+            &__box{
+              width: 100%;
+              border: 1px solid $linePrimary;
+              box-shadow: 0 2px 4px $shadow;
+              border-radius: 4px;
+              min-height: 150px;
+              .box {
+                &-header {
+                  padding: 8px 16px;
+                  font-size: 1.6rem;
+                  color: $contentPrimary;
+                  font-weight: 500;
+                  line-height: calc(18/16);
+                }
+                .form-group {
+                  padding: 0 16px;
+                  .form-control {
+                    font-size: 1.6rem;
+                    color: $contentSecondary;
+                  }
+                }
+              }
+            }
+            
+          }
+        }
+      }
+      .profileSetting {
+        &__box {
+          width: 600px;
+          max-width: calc(100% - 32px);
+          min-height: 300px;
+          border: 1px solid $linePrimary;
+          box-shadow: 0 2px 4px $shadow;
+          border-radius: 8px;
+          .box{
+            &__header{
+              font-size: 2rem;
+              line-height: calc(24/20);
+              font-weight: 500;
+              color: $contentPrimary;
+              padding: 16px;
+              border-bottom: 1px solid $linePrimary;
+            }
+            form {
+              padding: 16px;
+              .form-group {
+                label {
+                  span {
+                    color: $contentRed;
+                  }
+                }
+                .form-control {
+                  font-size: 1.6rem;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .modal {
+      .modal-content {
+        .modal-header {
+          display: flex;
+          align-items: center; 
+          .modal-title {
+            font-size: 2rem;
+            color: $contentOrange;
+            line-height: calc(24/20);
+            font-weight: 500;
+          }
+          i {
+            font-size: 2rem;
+            color: $contentOrange;
+          }
+        }
+        .modal-body {
+          padding: 1.6rem;
+          form {
+            label {
+              font-size: 1.6rem;
+              color: $contentPrimary;
+              font-weight: 500;
+              span {
+                color: $contentRed;
+              }
+            }
+            .form-group {
+              .form-control {
+                font-size: 1.6rem;
+              }
+            }
+            .input-group {
+              .form-control {
+                font-size: 1.6rem;
+              }
+              .input-group-text {
+                background-color: transparent;
+                padding: 0 16px;
+                font-size: 1.6rem;
+              }
+            }
+            .box {
+              text-align: center;
+              .btn {
+                font-size: 1.6rem;
+                font-weight: 400;
+                padding: 6px 24px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }

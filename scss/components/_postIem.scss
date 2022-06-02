@@ -32,7 +32,81 @@
     }
 }
 .CustomTapContent {
+    .modal {
+        .modal-content {
+            .modal-header {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .modal-title {
+                    font-size: 1.6rem;
+                }
+            }
+            .modal-body {
+                .box {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    &__image {
+                        &-left {
+                            display: flex;
+                            flex-direction: column;
+                            gap: 20px;
+                            .header {
+                                font-weight: 500;
+                            }
+                            div {
+                                display: flex;
+                                gap: 10px;
+                                span {
+                                    padding: 6px 16px;
+                                    display: block;
+                                    border: 1px solid $contentRed;
+                                    border-radius: 8px;
+
+                                    color: $contentSecondary;
+                                    font-weight: 600;
+                                    cursor: pointer;
+                                }
+                                span:hover {
+                                    opacity: 0.6;
+                                }
+                                .active {
+                                    background: $contentRed;
+                                    color: $contentInversePrimary;
+                                }
+                            }
+                        }
+                        &-right {
+                            display: flex;
+                            flex-direction: column;
+                            gap: 30px;
+                            .header {
+                                font-weight: 500;
+                            }
+                            div {
+                                span {
+                                    color: $contentRed;
+                                    font-weight: 500;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .modal-footer {
+                .btn {
+                    background-color: $contentRed;
+                    font-weight: 500;
+                    font-size: 1.6rem;
+                    color: $contentInversePrimary;
+                    border-radius: 200px;
+                    padding: 6px 16px;
+                }
+            }
+        }
+    }
     &__box {
+        
         .nav {
             gap: 10px;
             .nav-link {
@@ -74,79 +148,7 @@
                                 background-color: transparent;
                                 border: none;
                             }
-                            .modal {
-                                .modal-content {
-                                    .modal-header {
-                                        display: flex;
-                                        align-items: center;
-                                        justify-content: space-between;
-                                        .modal-title {
-                                            font-size: 1.6rem;
-                                        }
-                                    }
-                                    .modal-body {
-                                        .box {
-                                            display: grid;
-                                            grid-template-columns: repeat(2, 1fr);
-                                            &__image {
-                                                &-left {
-                                                    display: flex;
-                                                    flex-direction: column;
-                                                    gap: 20px;
-                                                    .header {
-                                                        font-weight: 500;
-                                                    }
-                                                    div {
-                                                        display: flex;
-                                                        gap: 10px;
-                                                        span {
-                                                            padding: 6px 16px;
-                                                            display: block;
-                                                            border: 1px solid $contentRed;
-                                                            border-radius: 8px;
-
-                                                            color: $contentSecondary;
-                                                            font-weight: 600;
-                                                            cursor: pointer;
-                                                        }
-                                                        span:hover {
-                                                            opacity: 0.6;
-                                                        }
-                                                        .active {
-                                                            background: $contentRed;
-                                                            color: $contentInversePrimary;
-                                                        }
-                                                    }
-                                                }
-                                                &-right {
-                                                    display: flex;
-                                                    flex-direction: column;
-                                                    gap: 30px;
-                                                    .header {
-                                                        font-weight: 500;
-                                                    }
-                                                    div {
-                                                        span {
-                                                            color: $contentRed;
-                                                            font-weight: 500;
-                                                        }
-                                                    }
-                                                }
-                                            }
-                                        }
-                                    }
-                                    .modal-footer {
-                                        .btn {
-                                            background-color: $contentRed;
-                                            font-weight: 500;
-                                            font-size: 1.6rem;
-                                            color: $contentInversePrimary;
-                                            border-radius: 200px;
-                                            padding: 6px 16px;
-                                        }
-                                    }
-                                }
-                            }
+                            
                         }
                         &__body {
                             width: 100%;
